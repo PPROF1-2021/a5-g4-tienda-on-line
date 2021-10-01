@@ -17,3 +17,8 @@ El presente documento tiene como propósito definir las especificaciones funcion
 - Tienda online con sistema de pago y envíos dentro del territorio nacional. Se plantea para un futuro no mayor a 3 años incorporar productores, emprendedores y artistas y la venta y distribución a nivel internacional.  
 -	La tienda va a permitir el ingreso de dos tipos de usuarios: proveedores (productores, emprendedores y artistas) y usuarios. Podrán crear un usuario que les permitirá comprar o vender los productos, acceder a contenidos específicos, promociones, eventos, etc.  
 -	Se incluirá un blog en el que se van a desarrollar noticias y tips 4R (reducir, reutilizar, reciclar y recuperar), artículos para fomentar la responsabilidad con el medioambiente y generar conciencia ecológica, eventos propios y de terceros.  
+### Alcance  
+Esta especificación de requisitos está dirigida al usuario del sistema.  
+- Productores, emprendedores y artistas que deseen vender sus productos a través de nuestra plataforma.  
+- Personas interesadas en adquirir productos ecológicamente responsables realizados con materiales reciclados.  
+- Personas interesadas en la temática 4R (reducir, reutilizar, reciclar y recuperar) y de participar en eventos ecológicamente responsables.  
