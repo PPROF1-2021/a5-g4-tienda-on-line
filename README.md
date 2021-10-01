@@ -13,7 +13,7 @@ Yorbandi, Selien Xavier
 ## Introducción  
 Este documento es una Especificación de Requisitos Software (ERS) para Green Buddies SA, que se dedica a la venta de productos realizados con materiales reciclados desarrollados por productores, emprendedores y artistas. 
 ### Propósito
-El presente documento tiene como propósito definir las especificaciones funcionales, para el desarrollo de un sistema de información web que permitirá a Green Buddies SA:
-•	Tienda online con sistema de pago y envíos dentro del territorio nacional. Se plantea para un futuro no mayor a 3 años incorporar productores, emprendedores y artistas y la venta y distribución a nivel internacional.  
-•	La tienda va a permitir el ingreso de dos tipos de usuarios: proveedores (productores, emprendedores y artistas) y usuarios. Podrán crear un usuario que les permitirá comprar o vender los productos, acceder a contenidos específicos, promociones, eventos, etc.  
-•	Se incluirá un blog en el que se van a desarrollar noticias y tips 4R (reducir, reutilizar, reciclar y recuperar), artículos para fomentar la responsabilidad con el medioambiente y generar conciencia ecológica, eventos propios y de terceros.  
+El presente documento tiene como propósito definir las especificaciones funcionales, para el desarrollo de un sistema de información web que permitirá a Green Buddies SA:  
+- Tienda online con sistema de pago y envíos dentro del territorio nacional. Se plantea para un futuro no mayor a 3 años incorporar productores, emprendedores y artistas y la venta y distribución a nivel internacional.  
+-	La tienda va a permitir el ingreso de dos tipos de usuarios: proveedores (productores, emprendedores y artistas) y usuarios. Podrán crear un usuario que les permitirá comprar o vender los productos, acceder a contenidos específicos, promociones, eventos, etc.  
+-	Se incluirá un blog en el que se van a desarrollar noticias y tips 4R (reducir, reutilizar, reciclar y recuperar), artículos para fomentar la responsabilidad con el medioambiente y generar conciencia ecológica, eventos propios y de terceros.  
