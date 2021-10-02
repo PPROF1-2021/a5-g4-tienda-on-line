@@ -22,3 +22,76 @@ Esta especificación de requisitos está dirigida al usuario del sistema.
 - Productores, emprendedores y artistas que deseen vender sus productos a través de nuestra plataforma.  
 - Personas interesadas en adquirir productos ecológicamente responsables realizados con materiales reciclados.  
 - Personas interesadas en la temática 4R (reducir, reutilizar, reciclar y recuperar) y de participar en eventos ecológicamente responsables.  
+
+### **Personal involucrado**
+
+|Nombre	 | Fernandez, Walter Adrian|
+| :- | :- | 
+|Rol	| Desarrollador|
+|Categoria Profesional |	Estudiante |
+|Responsabilidad	| |
+|Información de contacto |	wawarooh@gmail.com |
+
+|Nombre|	Gudiño Senn, Federica Fanny|
+| :- | :- | 
+|Rol|	Desarrollador|
+|Categoría| Profesional	Estudiante|
+|Responsabilidad|	|
+|Información de contacto|	fedegs2002@gmail.com |
+
+|Nombre|	Heit, Ignacio|
+| :- | :- | 
+|Rol|	Desarrollador|
+|Categoría Profesional|	Estudiante|
+|Responsabilidad| |	
+|Información de contacto|	nanetsistemas@hotmail.com|
+
+|Nombre|	Monzón, Lucila|
+| :- | :- | 
+|Rol|	Desarrollador|
+|Categoría Profesional|	Estudiante|
+|Responsabilidad| |	
+|Información de contacto|	lumonzon2021@gmail.com|
+
+|Nombre|	Murga, María Luciana|
+| :- | :- | 
+|Rol|	Desarrollador|
+|Categoría Profesional|	Estudiante|
+|Responsabilidad| |
+|Información de contacto|	lulipsicounc@gmail.com |
+
+|Nombre|	Rodríguez, José Luis|
+| :- | :- | 
+|Rol|	Desarrollador|
+|Categoría Profesional|	Estudiante|
+|Responsabilidad| |	
+|Información de contacto|	jl.rodriguezgm@gmail.com |
+
+|Nombre|	Yorbandi, Selien Xavier|
+| :- | :- | 
+|Rol|	Desarrollador|
+|Categoría Profesional|	Estudiante|
+|Responsabilidad| |	
+|Información de contacto|	selienxavieryorbandi@gmail.com|
+
+### **Definiciones, acrónimos y abreviaturas**
+
+|Nombre|	Descripción|
+| :- | :- | 
+|Usuario|	Persona que usará el sistema para gestionar procesos|
+|SIS-I|	Sistema de Información Web para la Gestión de Procesos Administrativos y Académicos|
+|ERS|	Especificación de Requisitos Software|
+|RF|	Requerimiento Funcional|
+|RNF|	Requerimiento No Funcional|
+|FTP|	Protocolo de Transferencia de Archivos|
+|Moodle|	Aula Virtual|
+|4R|	Reducir, Reutilizar, Reciclar y Recuperar|
+|HTML|	Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language|
+|CSS|	Hojas de Estilo Cascada, del inglés Cascading Style Sheets|
+|JS|	JavaScript|
+
+### **Referencias**
+
+|Título del Documento|	Referencia|
+| :- | :- | 
+|Standard IEEE 830 - 1998|	IEEE|
