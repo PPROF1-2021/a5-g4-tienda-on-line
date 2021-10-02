@@ -90,7 +90,7 @@ Esta especificación de requisitos está dirigida al usuario del sistema.
 |CSS|	Hojas de Estilo Cascada, del inglés Cascading Style Sheets|
 |JS|	JavaScript|
 
-### **Referencias**
+### *Referencias*
 
 |Título del Documento|	Referencia|
 | :- | :- | 
