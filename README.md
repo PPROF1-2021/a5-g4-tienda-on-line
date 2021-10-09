@@ -95,3 +95,40 @@ Esta especificación de requisitos está dirigida al usuario del sistema.
 |Título del Documento|	Referencia|
 | :- | :- | 
 |Standard IEEE 830 - 1998|	IEEE|
+
+### Descripción general
+
+### **Perspectiva del producto**
+El sistema que se desarrollará para Green Buddies SA, será una aplicación web integral que permitirá a los diferentes usuarios interactuar con la misma de manera clara, sencilla e intuitiva. Se planea realizar un diseño amigable y responsivo (adaptable a diferentes dispositivos y resoluciones).
+Esta aplicación le permitirá a Green Buddies SA gestionar su tienda online de manera eficaz (control de ventas, inventario, pagos, acuerdos con proveedores, etc.) y rápida.
+También tener un contacto fluido tanto con los proveedores como con los usuarios. Se les permitirá tener un usuario que le dará acceso a los servicios y productos ofrecidos en el sitio.
+Green Buddies SA no sólo persigue un fin comercial sino también una finalidad social. Es una empresa socialmente responsable y comprometida con sus valores de cuidado al medioambiente y la sociedad en la que está inserta. Este compromiso se verá reflejado en un blog con contenido referido a esta problemática, donde se instará a los usuarios a acompañar a Green Buddies SA en el consumo responsable de los recursos. A su vez, habrá una sección donde Green Buddies SA compartirá su visión, misión y objetivos.
+
+
+
+### **Características de los usuarios**
+|Tipo de usuario|	Administrador|
+| :- | :- | 
+|Formación|	Manejo de herramientas informáticas|
+|Actividades|	Control y manejo del sistema en general|
+
+|Tipo de usuario|	Proveedor|
+| :- | :- | 
+|Formación|	Manejo de entornos web|
+|Actividades|	Control de sus productos, stock, contacto con Green Buddies SA.|
+
+|Tipo de usuario| Cliente|
+| :- | :- | 
+|Formación|	Manejo de entornos web|
+|Actividades|	Consultas y opiniones sobre los productos, compras, visita y participación activa en el blog, visita a las diferentes secciones del sitio, participación en eventos, etc.|
+
+|Tipo de usuario| Visitante|
+| :- | :- | 
+|Formación|	Manejo de entornos web|
+|Actividades|	Consultas y opiniones sobre los productos, visita y participación activa en el blog, visita a las diferentes secciones del sitio, participación en eventos, etc.|
+
+
+### **Restricciones**
+-	Interfaz para ser usada con internet.
+-	Lenguajes y tecnologías en uso: HTML, CSS, Bootstrap, JavaScript.
+
