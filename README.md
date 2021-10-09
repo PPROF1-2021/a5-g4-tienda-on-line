@@ -39,13 +39,6 @@ Esta especificación de requisitos está dirigida al usuario del sistema.
 |Responsabilidad|	|
 |Información de contacto|	fedegs2002@gmail.com |
 
-|Nombre|	Heit, Ignacio|
-| :- | :- | 
-|Rol|	Desarrollador|
-|Categoría Profesional|	Estudiante|
-|Responsabilidad| |	
-|Información de contacto|	nanetsistemas@hotmail.com|
-
 |Nombre|	Monzón, Lucila|
 | :- | :- | 
 |Rol|	Desarrollador|
@@ -59,13 +52,6 @@ Esta especificación de requisitos está dirigida al usuario del sistema.
 |Categoría Profesional|	Estudiante|
 |Responsabilidad| |
 |Información de contacto|	lulipsicounc@gmail.com |
-
-|Nombre|	Rodríguez, José Luis|
-| :- | :- | 
-|Rol|	Desarrollador|
-|Categoría Profesional|	Estudiante|
-|Responsabilidad| |	
-|Información de contacto|	jl.rodriguezgm@gmail.com |
 
 |Nombre|	Yorbandi, Selien Xavier|
 | :- | :- | 
