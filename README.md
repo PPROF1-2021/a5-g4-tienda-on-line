@@ -132,3 +132,5 @@ Green Buddies SA no sólo persigue un fin comercial sino también una finalidad 
 -	Interfaz para ser usada con internet.
 -	Lenguajes y tecnologías en uso: HTML, CSS, Bootstrap, JavaScript.
 
+### **Mapa del Sitio**
+![Green Buddies](https://i.ibb.co/8B5Btz8/mapa-Del-Sitio.png)
