@@ -1,15 +1,23 @@
 /* *******************************Estilos generales*************************************** */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
+body 
+{
+
+
   overflow-x: hidden;
+
+
+
 }
 :root {
   --main-color: #ecebe9;
@@ -21,6 +29,51 @@ body {
   --form-color: #ECEBE9;
   --soft-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
 }
+
+
+/* NAV BAR RESPONSIVE*/
+
+#navbarNav li
+
+{
+  text-align: center;
+
+}
+
+
+#navbarNav a
+
+{
+
+  font-size: 20px;
+  color: var(--logo-font-color);
+
+}
+
+#navbarNav a:hover
+
+{
+
+border-bottom: solid 5px var(--logo-font-color);
+border-bottom-width: 2%;
+
+}
+
+.container li
+
+{
+
+margin-left: 5%;
+
+
+}
+
+
+
+
+/* NAV BAR RESPONSIVE*/
+
+
 
 h2 {
   font-weight: 700;
@@ -119,12 +172,15 @@ header p:nth-child(2) {
   margin-left: 20px;
 }
 
+
+/*
 header div {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
   margin-left: 20px;
 }
+*/
 
 main {
   min-height: calc(100vh - 82px - 25px);
