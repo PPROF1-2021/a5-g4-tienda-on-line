@@ -1,129 +1,122 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Tienda online de productos reciclados. 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Tienda online de productos reciclados. 
     Unite al consumo responsable. Productos de proveedores verificados, 
-    100% sostenibles y ecológicos"/>
-    <meta name="keywords" content="sustentabilidad, economía circular, 4R,
-    ecológico, sostenible, productos reciclados"/>
+    100% sostenibles y ecológicos" />
+  <meta name="keywords" content="sustentabilidad, economía circular, 4R,
+    ecológico, sostenible, productos reciclados" />
 
-    <!-- LINKS --->
+  <!-- LINKS --->
 
-    <!-- Bootstrap --->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-<link href="//oss.maxcdn.com/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css" rel="stylesheet"></link>
+  <!-- Bootstrap --->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Css --->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/greenbuddies.ico" />
-    <script src="https://kit.fontawesome.com/779db6cf6f.js"crossorigin="anonymous"></script>
+  <link href="//oss.maxcdn.com/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css" rel="stylesheet">
+  </link>
 
-    <title>Green Buddies | Login</title>
-  </head>
+  <!-- Css --->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/greenbuddies.ico" />
+  <script src="https://kit.fontawesome.com/779db6cf6f.js" crossorigin="anonymous"></script>
 
-  <body>
-    <header>
-      
-      <article class="logo">
-          <img src="img/greenBuddiesLogo.png" alt="">
-      </article>
-      <nav>
-          <ul>
-              <li><a href="index.html" target="self">Home</a></li>
-              <li><a href="" target="blank">Tienda</a></li>
-              <li><a href="contacto.html" target="blank">Contacto</a></li>
-              <li><a href="nosotros.html" target="blank">Nosotros</a></li>
-              <li><a href="blog.html" target="blank">Blog</a></li>
-          </ul>
-      </nav>
-      <ul class="headerUl">
-        <li><a href="login.html"><img src="img/usuario.png"></img></a>
-        </li>
-        <li><a href=""><img src="img/carrito.png"></img></a>
-        </li>
-          
+  <title>Green Buddies | Login</title>
+</head>
+
+<body class="log">
+  <header>
+
+    <article class="logo">
+      <img src="img/greenBuddiesLogo.png" alt="">
+    </article>
+    <nav>
+      <ul>
+        <li><a href="index.html" target="self">Home</a></li>
+        <li><a href="" target="blank">Tienda</a></li>
+        <li><a href="contacto.html" target="blank">Contacto</a></li>
+        <li><a href="nosotros.html" target="blank">Nosotros</a></li>
+        <li><a href="blog.html" target="blank">Blog</a></li>
       </ul>
-      </article>
-  </section>
-</header>
+    </nav>
+    <ul class="headerUl">
+      <li><a href="login.html"><img src="img/usuario.png"></img></a>
+      </li>
+      <li><a href=""><img src="img/carrito.png"></img></a>
+      </li>
 
-<br>
-<!------------BREADCRUMB--------------->
+    </ul>
+    </article>
+    </section>
+  </header>
 
-<div class="breadcrumb m-3 p-3">
+  <br>
+  <!------------BREADCRUMB--------------->
 
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Login</li>
-    </ol>
-  </nav>
+  <div class="breadcrumb m-3 p-3">
 
-</div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Login</li>
+      </ol>
+    </nav>
 
-<!------------BREADCRUMB--------------->
+  </div>
 
-    <main class="login">
-       
-    <section>
-    
-      <form action="" method="GET" class="needs-validation" novalidate>
+  <!------------BREADCRUMB--------------->
+
+  <main class="login">
+
+    <section class="container-sm">
+
+      <form action="" method="GET" class="needs-validation" validate >
         <img src="img/iconLogin.png" alt="Login" />
         <div>
           <label for="validationCustomUsername" class="form-label">Usuario:</label>
-          <input
-            type="usuario"
-            name="usuario"
-            class="form-control" id="validationCustom01"
-            placeholder="Ingresá tu usuario o correo electrónico"
-            required
-          />
+          <input type="usuario" name="usuario" class="form-control" id="validationCustom01"
+            placeholder="Ingresá tu usuario o correo electrónico" required />
         </div>
         <div>
           <label for="validationCustom02" class="form-label">Contraseña:</label>
-          <input
-            type="password"
-            name="password"
-            class="form-control" id="validationCustom02"
-            placeholder="Ingresá tu contraseña"
-            required
-          />
+          <input type="password" name="password" class="form-control" id="validationCustom02"
+            placeholder="Ingresá tu contraseña" required />
         </div>
         <a href="#" id="ingresar">Ingresar</a>
         <a href="#">Olvidaste tu contraseña?</a>
         <a href="registro.html">Si no tenés cuenta ingresá aqui</a>
       </form>
-   
-  </section>
+
+    </section>
 
 
-    </main>
+  </main>
 
-
-    <footer>
-      <section class="footer">
-        <div>
+  <footer>
+    <section class="footer">
+      <div>
         <a href="https://www.instagram.com/greenbuddies4r/" target="blank"><img src="img/instagram.png"></a>
         <p>Instagram</p>
-        </div>
-        <div>
+      </div>
+      <div>
         <a href="" target="blank"><img src="img/facebook.png"></a>
         <p>Facebook</p>
-        </div>
-      </section>
-      
-      <p>Todos los derechos reservados a Green Buddies®</p>
-    </footer>
-    
-    <!-- SCRIPTS -->
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+      </div>
+    </section>
+
+    <p>Todos los derechos reservados a Green Buddies®</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

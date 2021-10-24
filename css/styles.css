@@ -38,7 +38,7 @@ header section h2:nth-child(3) {
   color: #ffffff;
 }
 
-nav > ul > li {
+nav ul {
   list-style-image: url("../img/arbolito.png");
 }
 
@@ -212,11 +212,9 @@ footer div p {
 
 /* ====================================================================== */
 /*  ======== LOGIN.html ========  */
-.login {
-  display: flex;
-  
+.login section form {
+  margin:0 auto 2rem auto;
 }
-
 .login section form div {
   width: 355px;
   margin: 0.7rem 0;
@@ -225,12 +223,9 @@ footer div p {
 .login section form input {
   font-size: 0.7rem;
   width: 350px;
-  height: 40px;
-  left: 530px;
-  top: 484px;
+  height: 2.2rem;
   background-color: var(--clear-font-color);
   border-radius: 10px;
-  padding-left: 11px;
   border-width: 0px;
 }
 
@@ -277,19 +272,18 @@ footer div p {
 
 .login form {
   border-radius: 20px;
-  width: 800px;
-  height: 400px;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem 24rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   background-color: var(--main-color);
   box-shadow: 10px 10px 14px -2px rgba(0, 0, 0, 0.41);
   transition: all 0.8s ease-in-out;
   animation-duration: 1.5s;
-  animation-name: slideRight;
+  animation-name: fadeIn;
 }
 
 .login form img {
@@ -297,13 +291,13 @@ footer div p {
   padding: 1rem;
 }
 
-@keyframes slideRight {
+@keyframes fadeIn {
   from {
-    margin-top: -10rem;
+    opacity: 0;
   }
 
   to {
-    margin: 2rem 24rem;
+    opacity: 1;
   }
 }
 
@@ -457,7 +451,7 @@ footer div p {
 
 /* ====================== RESPONSIVIDAD ============================== */
 
-/* Extra large xl */
+/* **** Extra large xl **** */
 @media only screen and (max-width: 1200px) {
   /* ______________________________________ */
   /* _____________Nosotros.html____________ */
@@ -481,7 +475,7 @@ footer div p {
   }
 }
 
-/* Medium md */
+/* **** Medium md **** */
 @media only screen and (max-width: 768px) {
   /* ______________________________________ */
   /* _____________Nosotros.html____________ */
@@ -494,4 +488,33 @@ footer div p {
     text-align: center;
     margin: 0;
   }
+}
+
+/* **** x- Small <576px **** */
+@media only screen and (max-width:576px){
+  .login .container-sm {
+    width: 97%;
+    margin: auto;
+  }
+  .login form {
+    padding: .5rem;
+  }
+
+  .login section form div,
+  .login section form input {
+    width: 250px;
+  }
+
+}
+
+
+
+/* Arreglos aislados */
+@media only screen and (min-height: 800px) {
+  /* _________________________________________*/
+  /* ________________Login.html_______________ */
+  .log footer {
+    margin-top: calc(1rem + 19vh);
+  }
+
 }
