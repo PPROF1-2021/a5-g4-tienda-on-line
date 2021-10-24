@@ -129,7 +129,7 @@ footer {
   align-items: center;
   background-color: var(--second-color);
   padding-top: 10px;
-  margin-bottom: 0;
+  bottom: 0;
 }
 
 footer section {
@@ -214,7 +214,7 @@ footer div p {
 /*  ======== LOGIN.html ========  */
 .login {
   display: flex;
-  margin: 1rem;
+  
 }
 
 .login section form div {
@@ -283,8 +283,8 @@ footer div p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 3rem 24rem;
   padding-bottom: 2rem;
-  margin: 2rem 24rem;
   background-color: var(--main-color);
   box-shadow: 10px 10px 14px -2px rgba(0, 0, 0, 0.41);
   transition: all 0.8s ease-in-out;
