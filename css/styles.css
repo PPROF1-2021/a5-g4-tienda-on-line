@@ -27,7 +27,7 @@ html {
 }
 body {
   overflow-x: hidden;
-  background-color: var(--main-color);
+  background-color: var(--bg-color);
 }
 
 header section h2:nth-child(2) {
@@ -48,9 +48,9 @@ header {
   align-items: center;
   height: 62px;
   align-items: center;
-  background-color: var(--main-color);
-  padding-right: 30px;
-  padding-left: 30px;
+  background-color: #e2d5c4;
+  box-shadow: var(--nav-shadow);
+  padding: 30px 30px;
 }
 
 header div {
@@ -116,10 +116,12 @@ header img {
 }
 
 main {
-  min-height: calc(100vh-35px-120px);
+  height: calc(100vh-62px-120px);
+  background-color: var(--bg-color);
 }
 
-footer {
+footer { 
+  width: 100vw;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -127,8 +129,7 @@ footer {
   align-items: center;
   background-color: var(--second-color);
   padding-top: 10px;
-  margin-top: 1rem;
-  bottom: 0;
+  margin-bottom: 0;
 }
 
 footer section {
@@ -151,7 +152,7 @@ footer div p {
 }
 
 /* *********************************Estilos específicos************************************ */
-/* Home */
+/*  ======== HOME.html ========  */
 
 .home {
   display: flex;
@@ -161,10 +162,16 @@ footer div p {
 
 .carousel-item img {
   width: 40vw;
+  border-radius: 10px;
+  
 }
 
 .carousel {
   margin: 2rem auto;
+}
+
+.carousel-item{
+  transition: transform 2s ease, opacity .5s ease
 }
 
 .texto {
@@ -185,7 +192,7 @@ footer div p {
   font-size: 1.7rem;
   color: #699487;
   border-radius: 20px;
-  background-color: var();
+  background-color: var(--main-color);
   box-shadow: var(--nav-shadow);
 }
 
@@ -203,9 +210,11 @@ footer div p {
   color: #bfae93;
 }
 
-/* Login */
+/* ====================================================================== */
+/*  ======== LOGIN.html ========  */
 .login {
   display: flex;
+  margin: 1rem;
 }
 
 .login section form div {
@@ -298,7 +307,8 @@ footer div p {
   }
 }
 
-/*Registro*/
+/* ====================================================================== */
+/*  ======== REGISTRO.html ========  */
 
 .formulario_regis {
   width: 900px;
