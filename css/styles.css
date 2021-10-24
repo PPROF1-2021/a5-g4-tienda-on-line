@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,900;1,600;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,900;1,600;1,800&display=swap");
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@
 }
 
 :root {
-  --main-color: #ECEBE9;
+  --main-color: #ecebe9;
   --second-color: #aba29c;
   --bg-color: #b4ccb7;
   --font-color: #3c2313;
@@ -22,12 +22,13 @@
   --nav-shadow: 7px 4px 5px 0px rgba(146, 142, 142, 0.55);
 }
 
+html {
+  overflow-x: hidden;
+}
 body {
   overflow-x: hidden;
   background-color: var(--main-color);
 }
-
-
 
 header section h2:nth-child(2) {
   color: var(--font-color);
@@ -40,10 +41,6 @@ header section h2:nth-child(3) {
 nav ul {
   list-style-image: url("/img/arbolito.png");
 }
-
-
-
-
 
 header {
   display: flex;
@@ -112,16 +109,13 @@ header img {
 .headerUl {
   display: flex;
   list-style-type: none;
-  
 }
 
 .headerUl li {
-  margin-right: 20px;  
+  margin-right: 20px;
 }
 
-
-
-main{
+main {
   min-height: calc(100vh-35px-120px);
 }
 
@@ -137,29 +131,24 @@ footer {
   bottom: 0;
 }
 
-footer section{
+footer section {
   display: flex;
   justify-content: space-between;
-
 }
 
-
-footer div{
+footer div {
   display: flex;
-  padding:0.5rem;
+  padding: 0.5rem;
   width: fit-content;
   background-color: white;
   border-radius: 9px;
   margin: 0.5rem 2rem;
 }
 
-footer div p{
+footer div p {
   margin: 5px;
   color: var(--logo-font-color);
 }
-
-
-
 
 /* *********************************Estilos específicos************************************ */
 /* Home */
@@ -170,30 +159,29 @@ footer div p{
   justify-content: center;
 }
 
-.carousel-item img{
+.carousel-item img {
   width: 40vw;
 }
 
-.carousel {  
+.carousel {
   margin: 2rem auto;
 }
 
-
-.texto{
+.texto {
   display: flex;
   align-items: center;
   margin: 2rem;
   text-align: center;
 }
 
-.texto div{
+.texto div {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   padding: 2rem;
   width: 60rem;
   height: 70vh;
   margin: 4rem 6rem;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 1.7rem;
   color: #699487;
   border-radius: 20px;
@@ -201,32 +189,31 @@ footer div p{
   box-shadow: var(--nav-shadow);
 }
 
-.texto img{
+.texto img {
   height: 700px;
 }
 
-.texto p:nth-child(1){
+.texto p:nth-child(1) {
   text-transform: uppercase;
 }
-.texto p:nth-child(2){
+.texto p:nth-child(2) {
   font-size: 2.5rem;
 }
-.texto p:nth-child(3){
-  color: #BFAE93; 
+.texto p:nth-child(3) {
+  color: #bfae93;
 }
 
 /* Login */
 .login {
   display: flex;
-  
 }
 
 .login section form div {
-  width: 355px; 
+  width: 355px;
   margin: 0.7rem 0;
 }
 
-.login section form input{
+.login section form input {
   font-size: 0.7rem;
   width: 350px;
   height: 40px;
@@ -237,7 +224,6 @@ footer div p{
   padding-left: 11px;
   border-width: 0px;
 }
-
 
 .login section form a:first-of-type {
   width: 79px;
@@ -292,7 +278,7 @@ footer div p{
   margin: 2rem 24rem;
   background-color: var(--main-color);
   box-shadow: 10px 10px 14px -2px rgba(0, 0, 0, 0.41);
-  transition: all 0.8s ease-in-out; 
+  transition: all 0.8s ease-in-out;
   animation-duration: 1.5s;
   animation-name: slideRight;
 }
@@ -388,14 +374,12 @@ footer div p{
   border: 0 outset #ecf8ec;
 }
 
-
 /* ====================================================================== */
 /*  ======== NOSOTROS.html ========  */
 
-
 .main-nosotros {
   background: var(--main-color);
-  width: 100%;
+  width: 100vw;
 }
 
 .main-nosotros p {
@@ -411,6 +395,11 @@ footer div p{
   margin-bottom: 2rem;
 }
 
+.nosotros {
+  display: flex;
+  flex-direction: column;
+}
+
 .nosotros h1,
 .mision h2,
 .vision h2 {
@@ -418,23 +407,26 @@ footer div p{
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: calc(2rem + 3vw);
   justify-content: center;
 }
 
 .nosotros .imagen {
-  margin: 0 auto;
+  align-self: center;
   width: 50vw;
-  min-width: 550px;
+}
+
+.nosotros .imagen img {
+  width: 100%;
 }
 
 /* -------------- Separador de nosotros.html ------------------------- */
 
 .separador {
-  background: #70863B;
+  background: #70863b;
   display: flex;
   justify-content: space-between;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .separador-mensaje {
@@ -450,5 +442,46 @@ footer div p{
 }
 
 .separador .carousel img {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+}
+
+/* ====================== RESPONSIVIDAD ============================== */
+
+/* Extra large xl */
+@media only screen and (max-width: 1200px) {
+  /* ______________________________________ */
+  /* _____________Nosotros.html____________ */
+
+  .main-nosotros {
+    padding: 0 2rem;
+  }
+
+  /*-------------- Misión y Visión --------------*/
+
+  .mision .row,
+  .vision .row {
+    justify-content: center;
+  }
+
+  .mision .imagen {
+    width: 40vw;
+  }
+  .mision .imagen img {
+    width: 100%;
+  }
+}
+
+/* Medium md */
+@media only screen and (max-width: 768px) {
+  /* ______________________________________ */
+  /* _____________Nosotros.html____________ */
+
+  /* separador */
+  .separador-mensaje,
+  .separador .carousel {
+    padding: 1rem !important;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+  }
 }
