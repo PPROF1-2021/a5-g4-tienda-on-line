@@ -38,8 +38,8 @@ header section h2:nth-child(3) {
   color: #ffffff;
 }
 
-nav ul {
-  list-style-image: url("/img/arbolito.png");
+nav > ul > li {
+  list-style-image: url("../img/arbolito.png");
 }
 
 header {
