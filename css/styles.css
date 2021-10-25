@@ -25,21 +25,14 @@
 html {
   overflow-x: hidden;
 }
+
 body {
   overflow-x: hidden;
   background-color: var(--bg-color);
 }
 
-header section h2:nth-child(2) {
-  color: var(--font-color);
-}
-
-header section h2:nth-child(3) {
-  color: #ffffff;
-}
-
 nav ul {
-  list-style-image: url("/img/arbolito.png");
+  list-style-image: url("../img/arbolito.png");
 }
 
 header {
@@ -83,18 +76,6 @@ header a {
 
 header a:hover {
   color: rgba(0, 0, 0, 0.1);
-}
-
-header p {
-  color: #f3f3f3;
-}
-
-header p:nth-child(2) {
-  margin-left: 20px;
-}
-
-header p:nth-child(2) {
-  margin-left: 20px;
 }
 
 header img {
@@ -152,7 +133,7 @@ footer div p {
 }
 
 /* *********************************Estilos específicos************************************ */
-/*  ======== HOME.html ========  */
+/*  ======== index.html ========  */
 
 .home {
   display: flex;
@@ -160,36 +141,43 @@ footer div p {
   justify-content: center;
 }
 
+.home .carousel {
+  max-width: 600px;
+}
+
+.carousel-inner {
+  margin: auto;
+}
 .carousel-item img {
   width: 40vw;
-  border-radius: 10px;
-  
+  border-radius: 10px; 
 }
 
 .carousel {
   margin: 2rem auto;
 }
 
-.carousel-item{
-  transition: transform 2s ease, opacity .5s ease
-}
 
 .texto {
   display: flex;
   align-items: center;
-  margin: 2rem;
+  justify-content: center;
+  gap: 2rem;
   text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .texto div {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  width: 60rem;
-  height: 70vh;
-  margin: 4rem 6rem;
+  padding: calc(2rem + 5vh) 2rem;
+  margin: .5rem;
+  max-width: 900px;
+  width: 100vw;
+  height: 100%;
   font-family: "Libre Franklin", sans-serif;
-  font-size: 1.7rem;
+  font-size: calc(1rem + .5vw); /* 1.6rem */
   color: #699487;
   border-radius: 20px;
   background-color: var(--main-color);
@@ -197,24 +185,25 @@ footer div p {
 }
 
 .texto img {
-  height: 700px;
+  max-height: 700px;
+  height: calc(200px + 40vh)
 }
 
 .texto p:nth-child(1) {
   text-transform: uppercase;
 }
 .texto p:nth-child(2) {
-  font-size: 2.5rem;
+  font-size: calc(1.5rem + 1vw);
 }
 .texto p:nth-child(3) {
   color: #bfae93;
 }
 
-/* ====================================================================== */
-/*  ======== LOGIN.html ========  */
-.login {
-  display: flex;
-  
+
+/*  ======== login.html ========  */
+
+.login section form {
+  margin:0 auto 2rem auto;
 }
 
 .login section form div {
@@ -225,12 +214,9 @@ footer div p {
 .login section form input {
   font-size: 0.7rem;
   width: 350px;
-  height: 40px;
-  left: 530px;
-  top: 484px;
+  height: 2.2rem;
   background-color: var(--clear-font-color);
   border-radius: 10px;
-  padding-left: 11px;
   border-width: 0px;
 }
 
@@ -267,7 +253,7 @@ footer div p {
   padding-top: 10px;
   padding: 2px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .login section form a:last-of-type {
@@ -277,19 +263,18 @@ footer div p {
 
 .login form {
   border-radius: 20px;
-  width: 800px;
-  height: 400px;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem 24rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   background-color: var(--main-color);
   box-shadow: 10px 10px 14px -2px rgba(0, 0, 0, 0.41);
   transition: all 0.8s ease-in-out;
   animation-duration: 1.5s;
-  animation-name: slideRight;
+  animation-name: fadeIn;
 }
 
 .login form img {
@@ -297,18 +282,18 @@ footer div p {
   padding: 1rem;
 }
 
-@keyframes slideRight {
+@keyframes fadeIn {
   from {
-    margin-top: -10rem;
+    opacity: 0;
   }
 
   to {
-    margin: 2rem 24rem;
+    opacity: 1;
   }
 }
 
-/* ====================================================================== */
-/*  ======== REGISTRO.html ========  */
+
+/*  ======== registro.html ========  */
 
 .formulario_regis {
   width: 900px;
@@ -384,8 +369,8 @@ footer div p {
   border: 0 outset #ecf8ec;
 }
 
-/* ====================================================================== */
-/*  ======== NOSOTROS.html ========  */
+
+/*  ======== nosotros.html ========  */
 
 .main-nosotros {
   background: var(--main-color);
@@ -430,7 +415,7 @@ footer div p {
   width: 100%;
 }
 
-/* -------------- Separador de nosotros.html ------------------------- */
+/*  Separador de nosotros.html  */
 
 .separador {
   background: #70863b;
@@ -455,10 +440,12 @@ footer div p {
   border-radius: 0.5rem;
 }
 
-/* ====================== RESPONSIVIDAD ============================== */
+/* ======================= RESPONSIVIDAD ============================== */
 
-/* Extra large xl */
+/* **** Extra large xl **** */
+
 @media only screen and (max-width: 1200px) {
+
   /* ______________________________________ */
   /* _____________Nosotros.html____________ */
 
@@ -481,17 +468,85 @@ footer div p {
   }
 }
 
-/* Medium md */
+
+/* ** Medium md ** */
+
 @media only screen and (max-width: 768px) {
-  /* ______________________________________ */
-  /* _____________Nosotros.html____________ */
+
+  /* ______________*/
+  /* ____home.html_____ */
+
+
+  /* carousel */
+
+  .home .carousel {
+    width: 100vw;
+  }
+
+  .home .container-md {
+    padding-left: 0; 
+  }
+
+  
+  /* ______________ */
+  /* ____Nosotros.html_____ */
 
   /* separador */
+
   .separador-mensaje,
   .separador .carousel {
     padding: 1rem !important;
     justify-content: center;
     text-align: center;
     margin: 0;
+  }
+}
+
+/* ** x- Small <576px ** */
+
+@media only screen and (max-width:576px){
+  
+  footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
+  /* login.html */
+
+  .login .container-sm {
+    width: 97%;
+    margin: auto;
+  }
+  .login form {
+    padding: .5rem;
+  }
+
+  .login section form div,
+  .login section form input {
+    width: 250px;
+  }
+}
+
+
+
+/* Arreglos aislados y -provisorios- */
+
+@media only screen and (min-height: 800px) {
+ 
+  /* _______________*/
+  /* _____Login.html______ */
+ 
+  .log footer {
+    margin-top: calc(1rem + 22vh);
   }
 }
