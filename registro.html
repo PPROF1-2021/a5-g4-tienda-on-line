@@ -25,7 +25,7 @@
       </a>
       <ul class="navLinks">
         <li><a href="index.html" target="self">Home</a></li>
-        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="index.html">Tienda</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -54,41 +54,114 @@
       </nav>
     </div>
   </header>
+  
+  <main>
 
-  <main class="registro">
-    <section class="formulario_regis was-validated">
-      <h4>Registrarse es fácil y rápido</h4>
-      <input type="text" name="nombre" class="nombre" placeholder="Nombre" required>
-      <input type="text" name="apellido" class="apellido" placeholder="Apellido" required>
-      <input type="text" name="pais" class="pais" placeholder="País" required>
-      <input type="text" name="provincia" class="provincia" placeholder="Provincia" required>
-      <input type="text" name="nacimiento" class="nacimiento" placeholder="Fecha de nacimiento" required>
-      <input type="email" name="correo" class="correo" placeholder="Correo" required>
-      <input type="password" name="correo" class="correo" placeholder="Contraseña" required>
-      <input class="boton" type="submit" value="Registrarse">
-      <p><a href="login.html">Ya tengo una cuenta</a></p>
-    </section>
+  <!-- Formulario -->
+    <div class="formulario_registro m-1 container-md m-auto p-5">
+      <div class="text-center mb-5">
+        <h4>¡Registrarse es fácil y rápido!</h4>
+      </div>
+      <!-- Nombre -->
+  
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationDefault01" required>
+        </div>
+  
+        <!-- Apellido -->
+  
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationDefault02" value="" required>
+        </div>
+  
+        <!-- Fecha de nacimiento -->
+  
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Fecha de nacimiento</label>
+          <input type="date" class="form-control" id="validationDefault02" value="" required>
+        </div>
+  
+        <!-- Correo -->
+  
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="validationDefault01" value="" required>
+        </div>
+  
+        <!-- Contraseña -->
+  
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="validationDefault01" value="" required>
+          </div>
+  
+          <!-- Pais -->
+  
+          <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">País</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+          </div>
+  
+  
+          <!-- Provincia -->
+  
+          <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">Provincia</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+          </div>
+  
+          <!-- Codigo postal -->
+  
+          <div class="col-md-3">
+            <label for="validationDefault05" class="form-label">Código Postal</label>
+            <input type="number" class="form-control" id="validationDefault05" required>
+          </div>
+  
+          <!-- // SUBMIT -->
+  
+          <div class="col-12 text-center">
+            <button class="btn btn-success" type="submit">Enviar</button>
+          </div>
+
+          <!---inicio sesion-->
+
+          <div class="text-center">
+            <p><a href="login.html">Ya tengo una cuenta</a></p>
+          </div>
+
+  
+        </form>
+  
+    </div>
+
   </main>
 
-  <footer>
-    <footer>
-      <section class="footer">
-        <div>
-          <a href="https://www.instagram.com/greenbuddies4r/" target="blank"><img src="img/instagram.png"
-              alt="logo de Instagram"></a>
-          <p>Instagram</p>
-        </div>
-        <div>
-          <a href="" target="blank"><img src="img/facebook.png" alt="logo de Facebook"></a>
-          <p>Facebook</p>
-        </div>
-      </section>
-      <p>Todos los derechos reservados a Green Buddies®</p>
-    </footer>
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
+  <!-- Formulario -->
+
+
+  <footer class="regis">
+    <section class="footer">
+      <div>
+        <a href="https://www.instagram.com/greenbuddies4r/" target="blank"><img src="img/instagram.png"
+            alt="logo de Instagram"></a>
+        <p>Instagram</p>
+      </div>
+      <div>
+        <a href="" target="blank"><img src="img/facebook.png" alt="logo de Facebook"></a>
+        <p>Facebook</p>
+      </div>
+    </section>
+    <p>Todos los derechos reservados a Green Buddies®</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </body>
 
