@@ -16,32 +16,41 @@
 
   <body>
     <header>
-     <article class="logo">
-         <img src="img/greenBuddiesLogo.png" alt="logo Green Buddies">
-     </article>
-      <nav>
-        <ul>
-          <li><a href="index.html" target="self">Home</a></li>
-          <li><a href="" target="blank">Tienda</a></li>
-          <li><a href="contacto.html" target="blank">Contacto</a></li>
-          <li><a href="nosotros.html" target="blank">Nosotros</a></li>
-          <li><a href="blog.html" target="blank">Blog</a></li>
+      <nav class="navMenu">
+        <a href="index.html" class="logo">
+          <img src="img/greenBuddiesLogo.png" alt="Logo de Green Buddies">  
+        </a>
+        <ul class="navLinks">
+            <li><a href="index.html" target="self">Home</a></li>
+            <li><a href="index.html">Tienda</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="logBtn">
+              <span><a href="login.html" id="ingresar">Ingresá</a></span>
+              <span><a href="registro.html" id="ingresar">Registrate</a></span>
+            </li>
         </ul>
+        <ul class="headerUl">
+          <li><a href="login.html"><img src="img/usuario.png" alt="Ícono de usuario"></img></a></li>
+          <li class="cartBtn"><a href=""><img src="img/carrito.png" alt="Ícono de carrito de compras"></img></a></li>
+          <li class="hamMenu">
+            <span class="hamTop"></span>
+            <span class="hamMid"></span>
+            <span class="hamBot"></span>
+          </li>
+        </ul>  
       </nav>
-      <ul class="headerUl">
-       <li><a href="login.html"><img src="img/usuario.png" alt="Ícono de usuario"></img></a></li>  
-       <li><a href=""><img src="img/carrito.png" alt="Ícono de carrito de compras"></img></a></li>     
-      </ul>
+    
+      <div class="breadcrumb ms-5 mt-4">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+          </ol>
+        </nav>
+      </div>
     </header>
-  
-    <div class="breadcrumb ms-5 mt-4">
-     <nav aria-label="breadcrumb">
-       <ol class="breadcrumb">
-         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-         <li class="breadcrumb-item active" aria-current="page">Blog</li>
-       </ol>
-      </nav>
-     </div>
 
      <main class="home">
       <section class="container-md m-auto">
@@ -96,7 +105,7 @@
       </section>
       <p>Todos los derechos reservados a Green Buddies®</p>
     </footer>
-
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
  </body>

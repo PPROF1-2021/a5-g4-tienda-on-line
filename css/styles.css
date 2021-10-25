@@ -1,5 +1,3 @@
-/* *******************************Estilos generales*************************************** */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,900;1,600;1,800&display=swap");
@@ -31,41 +29,19 @@ body {
   background-color: var(--bg-color);
 }
 
-nav ul {
-  list-style-image: url("/img/arbolito.png");
-}
-
-header {
+/* __Barra de navegación y menú hamburguesa__ */
+.navMenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 62px;
-  align-items: center;
-  background-color: #e2d5c4;
+  justify-items: center;
+  background-color: #ECEBE9;
   box-shadow: var(--nav-shadow);
-  padding: 30px 30px;
+  padding: 1.5rem 3rem;
+  max-height: 70px;
 }
 
-header div {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  margin-left: 20px;
-}
-
-header article {
-  display: flex;
-}
-
-header nav ul {
-  display: flex;
-}
-
-header nav ul li {
-  margin: 30px;
-}
-
-header a {
+.navMenu a {
   text-decoration: none;
   color: #76757a;
   font-style: normal;
@@ -74,26 +50,54 @@ header a {
   text-shadow: var(--soft-shadow);
 }
 
-header a:hover {
+.navMenu a:hover {
   color: rgba(0, 0, 0, 0.1);
 }
 
-header img {
-  width: 30px;
-  margin: 0 5px;
+.navMenu img {
+  width: 40px;
 }
 
-.logo img {
+.navMenu .logo img {
   width: 120px;
+
+}
+.navMenu a {
+  width: min-content;
+}
+
+.navLinks {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 0;
+  list-style-image: url("../img/arbolito.png");
+}
+
+.logBtn {
+  display: none;
 }
 
 .headerUl {
   display: flex;
-  list-style-type: none;
+  list-style: none;
+  margin-bottom: 0;
+  gap: 1.5rem;
+}
+.headerUl :first-child img {
+  width: 28px;
 }
 
-.headerUl li {
-  margin-right: 20px;
+.hamMenu {
+  cursor: pointer;
+  display: none;
+}
+.hamMenu span {
+  display: block;
+  background-color: #007305;
+  height: 3.4px;
+  width: 35px;
+  margin: 7px auto;
+  border-radius: 2px;
 }
 
 main {
@@ -101,7 +105,7 @@ main {
   background-color: var(--bg-color);
 }
 
-footer { 
+footer {
   width: 100vw;
   color: #ffffff;
   display: flex;
@@ -150,13 +154,12 @@ footer div p {
 }
 .carousel-item img {
   width: 40vw;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .carousel {
   margin: 2rem auto;
 }
-
 
 .texto {
   display: flex;
@@ -172,12 +175,12 @@ footer div p {
   display: flex;
   flex-direction: column;
   padding: calc(2rem + 5vh) 2rem;
-  margin: .5rem;
+  margin: 0.5rem;
   max-width: 900px;
   width: 100vw;
   height: 100%;
   font-family: "Libre Franklin", sans-serif;
-  font-size: calc(1rem + .5vw); /* 1.6rem */
+  font-size: calc(1rem + 0.5vw); /* 1.6rem */
   color: #699487;
   border-radius: 20px;
   background-color: var(--main-color);
@@ -186,7 +189,7 @@ footer div p {
 
 .texto img {
   max-height: 700px;
-  height: calc(200px + 40vh)
+  height: calc(200px + 40vh);
 }
 
 .texto p:nth-child(1) {
@@ -199,11 +202,10 @@ footer div p {
   color: #bfae93;
 }
 
-
 /*  ======== login.html ========  */
 
 .login section form {
-  margin:0 auto 2rem auto;
+  margin: 0 auto 2rem auto;
 }
 .login section form div {
   width: 355px;
@@ -252,7 +254,7 @@ footer div p {
   padding-top: 10px;
   padding: 2px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .login section form a:last-of-type {
@@ -290,7 +292,6 @@ footer div p {
     opacity: 1;
   }
 }
-
 
 /*  ======== registro.html ========  */
 
@@ -368,7 +369,6 @@ footer div p {
   border: 0 outset #ecf8ec;
 }
 
-
 /*  ======== nosotros.html ========  */
 
 .main-nosotros {
@@ -444,7 +444,6 @@ footer div p {
 /* **** Extra large xl **** */
 
 @media only screen and (max-width: 1200px) {
-
   /* ______________________________________ */
   /* _____________Nosotros.html____________ */
 
@@ -467,14 +466,102 @@ footer div p {
   }
 }
 
+@media only screen and (max-width: 966px) {
+  .hamMenu {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 80px;
+  }
+  .navMenu {
+    flex-direction: column;
+    align-items: initial;
+    position: relative;
+    width: 100vw;
+    padding: 8px 15px;
+    max-height: none;
+  }
+  .navMenu .logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    padding: 0;
+    margin: 1rem 0;
+    gap: 0;
+    background: #ECEBE9;
+    list-style: none;
+    display: none;
+    opacity: 0;
+  }
+
+  .navLinks.active {
+    display: flex;
+    animation: fade .5s ease-in-out both;
+  }
+
+  @keyframes fade{
+    from{opacity: 0}
+    to{opacity: 1}
+  }
+
+  .navLinks li {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .navMenu .logo img {
+    width: 120px;
+  }
+  
+  .logBtn {
+    display: flex;
+    padding-top: 1rem;
+    gap: 1rem;
+  }
+  
+  .logBtn a {
+    border-radius: 10px;
+    padding: .7rem 1rem;
+    background: #007305;
+    color:var(--clear-font-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: var(--soft-shadow);
+  }
+
+  .logBtn :last-child a{
+    background: var(--second-color);
+    color: var(--font-color);
+  }
+
+  .headerUl {
+    display: flex;
+    list-style: none;
+  }
+  .headerUl li:first-child{
+    display: none;
+  }
+  .cartBtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+
+  .headerUl :first-child img {
+    width: 40px;
+  }
+
+}
 
 /* ** Medium md ** */
-
 @media only screen and (max-width: 768px) {
-
   /* ______________*/
   /* ____home.html_____ */
-
 
   /* carousel */
 
@@ -483,14 +570,21 @@ footer div p {
   }
 
   .home .container-md {
-    padding-left: 0; 
+    padding-left: 0;
   }
 
-  
   /* ______________ */
   /* ____Nosotros.html_____ */
 
   /* separador */
+  .separador {
+    justify-content: center;
+  }
+
+  .separador .row,
+  .separador .carousel {
+    width: 100%;
+  }
 
   .separador-mensaje,
   .separador .carousel {
@@ -503,8 +597,7 @@ footer div p {
 
 /* ** x- Small <576px ** */
 
-@media only screen and (max-width:576px){
-  
+@media only screen and (max-width: 576px) {
   footer {
     width: 100%;
     height: 100%;
@@ -519,7 +612,6 @@ footer div p {
     flex-wrap: wrap;
   }
 
-
   /* login.html */
 
   .login .container-sm {
@@ -527,7 +619,7 @@ footer div p {
     margin: auto;
   }
   .login form {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   .login section form div,
@@ -536,15 +628,12 @@ footer div p {
   }
 }
 
-
-
 /* Arreglos aislados y -provisorios- */
 
 @media only screen and (min-height: 800px) {
- 
   /* _______________*/
   /* _____Login.html______ */
- 
+
   .log footer {
     margin-top: calc(1rem + 22vh);
   }

@@ -1,79 +1,95 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Tienda online de productos reciclados. Unite al consumo responsable. Productos de proveedores verificados, 100% sostenibles y ecológicos"/>
-    <meta name="keywords" content="sustentabilidad, economía circular, 4R, ecológico, sostenible, productos reciclados"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/greenbuddies.ico" />
-    <script src="https://kit.fontawesome.com/779db6cf6f.js"crossorigin="anonymous"></script>
-    <title>Green Buddies | Registro</title>
-  </head>
 
-  <body>
-    <header>     
-      <article class="logo">
-          <img src="img/greenBuddiesLogo.png" alt="Logo de Green Buddies">
-      </article>
-      <nav>
-          <ul>
-              <li><a href="index.html" target="self">Home</a></li>
-              <li><a href="" target="blank">Tienda</a></li>
-              <li><a href="contacto.html" target="blank">Contacto</a></li>
-              <li><a href="nosotros.html" target="blank">Nosotros</a></li>
-              <li><a href="blog.html" target="blank">Blog</a></li>
-          </ul>
-      </nav>
-      <ul class="headerUl">
-        <li><a href="login.html"><img src="img/usuario.png" alt="Ícono de usuario"></img></a></li>  
-        <li><a href=""><img src="img/carrito.png" alt="Ícono de carrito de compras"></img></a></li>     
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description"
+    content="Tienda online de productos reciclados. Unite al consumo responsable. Productos de proveedores verificados, 100% sostenibles y ecológicos" />
+  <meta name="keywords" content="sustentabilidad, economía circular, 4R, ecológico, sostenible, productos reciclados" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/greenbuddies.ico" />
+  <script src="https://kit.fontawesome.com/779db6cf6f.js" crossorigin="anonymous"></script>
+  <title>Green Buddies | Registro</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navMenu">
+      <a href="index.html" class="logo">
+        <img src="img/greenBuddiesLogo.png" alt="Logo de Green Buddies">
+      </a>
+      <ul class="navLinks">
+        <li><a href="index.html" target="self">Home</a></li>
+        <li><a href="index.html">Tienda</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li class="logBtn">
+          <span><a href="login.html" id="ingresar">Ingresá</a></span>
+          <span><a href="registro.html" id="ingresar">Registrate</a></span>
+        </li>
       </ul>
-    </header>
+      <ul class="headerUl">
+        <li><a href="login.html"><img src="img/usuario.png" alt="Ícono de usuario"></img></a></li>
+        <li class="cartBtn"><a href=""><img src="img/carrito.png" alt="Ícono de carrito de compras"></img></a></li>
+        <li class="hamMenu">
+          <span class="hamTop"></span>
+          <span class="hamMid"></span>
+          <span class="hamBot"></span>
+        </li>
+      </ul>
+    </nav>
+
     <div class="breadcrumb ms-5 mt-4">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Registro</li>
+          <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
         </ol>
       </nav>
     </div>
+  </header>
 
-    <main class="registro">
-     <section class="formulario_regis was-validated">
-         <h4>Registrarse es fácil y rápido</h4>
-         <input type="text" name="nombre" class="nombre" placeholder="Nombre" required>
-         <input type="text" name="apellido" class="apellido" placeholder="Apellido" required >
-         <input type="text" name="pais" class="pais" placeholder="País" required>
-         <input type="text" name="provincia" class="provincia" placeholder="Provincia" required>
-         <input type="text" name="nacimiento" class="nacimiento" placeholder="Fecha de nacimiento" required >
-         <input type="email" name="correo" class="correo" placeholder="Correo" required>
-         <input type="password" name="correo" class="correo" placeholder="Contraseña" required>
-         <input class="boton" type="submit" value="Registrarse">
-         <p><a href="login.html">Ya tengo una cuenta</a></p>
-      </section>
-     </main>
+  <main class="registro">
+    <section class="formulario_regis was-validated">
+      <h4>Registrarse es fácil y rápido</h4>
+      <input type="text" name="nombre" class="nombre" placeholder="Nombre" required>
+      <input type="text" name="apellido" class="apellido" placeholder="Apellido" required>
+      <input type="text" name="pais" class="pais" placeholder="País" required>
+      <input type="text" name="provincia" class="provincia" placeholder="Provincia" required>
+      <input type="text" name="nacimiento" class="nacimiento" placeholder="Fecha de nacimiento" required>
+      <input type="email" name="correo" class="correo" placeholder="Correo" required>
+      <input type="password" name="correo" class="correo" placeholder="Contraseña" required>
+      <input class="boton" type="submit" value="Registrarse">
+      <p><a href="login.html">Ya tengo una cuenta</a></p>
+    </section>
+  </main>
 
+  <footer>
     <footer>
-      <footer> 
-        <section class="footer">
-          <div>
-            <a href="https://www.instagram.com/greenbuddies4r/" target="blank"><img src="img/instagram.png" alt="logo de Instagram"></a>
-            <p>Instagram</p>
-          </div>
-          <div>
-            <a href="" target="blank"><img src="img/facebook.png" alt="logo de Facebook"></a>
-            <p>Facebook</p>
-          </div>
-        </section>
-        <p>Todos los derechos reservados a Green Buddies®</p>
-       </footer>
-      
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-     
-    </body>
-   
-   </html>
+      <section class="footer">
+        <div>
+          <a href="https://www.instagram.com/greenbuddies4r/" target="blank"><img src="img/instagram.png"
+              alt="logo de Instagram"></a>
+          <p>Instagram</p>
+        </div>
+        <div>
+          <a href="" target="blank"><img src="img/facebook.png" alt="logo de Facebook"></a>
+          <p>Facebook</p>
+        </div>
+      </section>
+      <p>Todos los derechos reservados a Green Buddies®</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
