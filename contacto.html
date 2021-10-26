@@ -57,10 +57,57 @@
 
   <main>
 
+    <!-- Formulario -->
+    <div class="formulario_contacto m-1 container-md m-auto p-5">
+      <div class="text-center mb-5">
+        <h4>Contacto con Green Buddies</h4>
+      </div>
+      
+
+      <!-- Nombre -->
+  
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationDefault01" required>
+        </div>
+  
+        <!-- Apellido -->
+  
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationDefault02" value="" required>
+        </div>
+
+        <!-- Correo -->
+  
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="validationDefault01" value="" required>
+        </div>
+
+        <!-- Mensaje -->
+
+        <div class="form-group" >
+          <label for="mensajeContacto">Mensaje</label>
+          <textarea class="form-control" id="mensajeContacto" rows="4" required></textarea>
+        </div>
+          
+        
+        <!-- // SUBMIT -->
+  
+        <div class="col-12 text-center">
+          <button class="btn btn-success" type="submit">Enviar</button>
+        </div>
+
+      </form>
+
+    </div>
+
   </main>
 
 
-  <footer>
+  <footer class="contacto">
     <section class="footer">
       <div>
         <a href="https://www.instagram.com/greenbuddies4r/" target="blank"><img src="img/instagram.png"

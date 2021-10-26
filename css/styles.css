@@ -295,7 +295,8 @@ footer div p {
 
 /*  ======== registro.html ========  */
 
-.formulario_registro {
+.formulario_registro ,
+.formulario_contacto {
   background: var(--form-color);
   padding: 22px;
   margin-left: 22rem;
@@ -304,7 +305,9 @@ footer div p {
   color: #000;
   box-shadow: 2px 3px 9px #000;
 }
-.formulario_registro input {
+.formulario_registro input ,
+.formulario_contacto input ,
+.formulario_contacto textarea {
   width: 100%;
   background: white;
   padding: 10px;
@@ -313,11 +316,19 @@ footer div p {
   border: 1px solid gray;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 15px;
+
 }
 
 .regis {
   margin-top: 3rem;
 }
+
+/*  ======== contacto.html ========  */
+
+.contacto {
+  margin-top: calc(9rem + 12vh);
+}
+
 
 /*  ======== nosotros.html ========  */
 
