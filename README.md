@@ -120,4 +120,7 @@ Green Buddies SA no sólo persigue un fin comercial sino también una finalidad 
 ![Green Buddies](https://i.ibb.co/8B5Btz8/mapa-Del-Sitio.png)
 
 ### Prototipo
-[Figma GreenBuddies](https://www.figma.com/file/tUEV6OEPa16jo3jaq9mHNG/GreenBuddies?node-id=6%3A2)
+[Figma Green Buddies](https://www.figma.com/file/tUEV6OEPa16jo3jaq9mHNG/GreenBuddies?node-id=6%3A2)
+
+### Sitio web
+[Sitio Green Buddies](https://pprof1-2021.github.io/a5-g4-tienda-on-line/)
