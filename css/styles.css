@@ -517,6 +517,16 @@ footer div p {
     width: 40px;
   }
 
+  .hamTop.active {
+    transform: rotate(-45deg) translate(-7px , 8px);
+  }
+  .hamMid.active {
+    opacity: 0;
+  }
+  .hamBot.active {
+    transform: rotate(45deg) translate(-7px, -8px);
+  }
+
 }
 
 /* ** Medium md ** */
