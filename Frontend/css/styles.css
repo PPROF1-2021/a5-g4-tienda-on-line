@@ -35,7 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-items: center;
-  background-color: #ECEBE9;
+  background-color: #ecebe9;
   box-shadow: var(--nav-shadow);
   padding: 1.5rem 3rem;
   max-height: 70px;
@@ -50,8 +50,9 @@ body {
   text-shadow: var(--soft-shadow);
 }
 
-.navMenu a:hover {
-  color: rgba(0, 0, 0, 0.1);
+.navMenu a:hover,
+.navMenu a:focus {
+  color: #007305;
 }
 
 .navMenu img {
@@ -60,7 +61,6 @@ body {
 
 .navMenu .logo img {
   width: 120px;
-
 }
 .navMenu a {
   width: min-content;
@@ -71,6 +71,32 @@ body {
   gap: 4rem;
   margin-bottom: 0;
   list-style-image: url("../img/arbolito.png");
+  /* list-style: none; */
+}
+
+/* Submenu de tienda */
+.dropdown-menu {
+  background: var(--main-color);
+  padding: 1.5rem 2rem;
+  margin-top: 1.2rem !important;
+  margin-left: -5.5rem !important;
+  min-width: 15rem !important;
+  width: 2% !important;
+  border-top: none;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.dropdown-menu li {
+  padding: 0.3rem 0;
+}
+.dropdown-menu li a {
+  text-shadow: none;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.dropdown-menu li:first-child a {
+  font-weight: 600;
 }
 
 .logBtn {
@@ -87,6 +113,7 @@ body {
   width: 28px;
 }
 
+/* Boton menu hamburguesa */
 .hamMenu {
   cursor: pointer;
   display: none;
@@ -295,7 +322,7 @@ footer div p {
 
 /*  ======== registro.html ========  */
 
-.formulario_registro ,
+.formulario_registro,
 .formulario_contacto {
   background: var(--form-color);
   padding: 22px;
@@ -305,8 +332,8 @@ footer div p {
   color: #000;
   box-shadow: 2px 3px 9px #000;
 }
-.formulario_registro input ,
-.formulario_contacto input ,
+.formulario_registro input,
+.formulario_contacto input,
 .formulario_contacto textarea {
   width: 100%;
   background: white;
@@ -316,7 +343,6 @@ footer div p {
   border: 1px solid gray;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 15px;
-
 }
 
 .regis {
@@ -328,7 +354,6 @@ footer div p {
 .contacto {
   margin-top: calc(9rem + 12vh);
 }
-
 
 /*  ======== nosotros.html ========  */
 
@@ -454,7 +479,7 @@ footer div p {
     padding: 0;
     margin: 1rem 0;
     gap: 0;
-    background: #ECEBE9;
+    background: #ecebe9;
     list-style: none;
     display: none;
     opacity: 0;
@@ -462,40 +487,44 @@ footer div p {
 
   .navLinks.active {
     display: flex;
-    animation: fade .5s ease-in-out both;
+    animation: fade 0.5s ease-in-out both;
   }
 
-  @keyframes fade{
-    from{opacity: 0}
-    to{opacity: 1}
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .navLinks li {
     margin: 1rem;
     font-size: 1.5rem;
   }
-  
+
   .navMenu .logo img {
     width: 120px;
   }
-  
+
   .logBtn {
     display: flex;
     padding-top: 1rem;
     gap: 1rem;
   }
-  
+
   .logBtn a {
     border-radius: 10px;
-    padding: .7rem 1rem;
+    padding: 0.7rem 1rem;
     background: #007305;
-    color:var(--clear-font-color);
+    color: var(--clear-font-color);
     font-weight: 600;
     font-size: 1.2rem;
     box-shadow: var(--soft-shadow);
   }
 
-  .logBtn :last-child a{
+  .logBtn :last-child a {
     background: var(--second-color);
     color: var(--font-color);
   }
@@ -504,7 +533,7 @@ footer div p {
     display: flex;
     list-style: none;
   }
-  .headerUl li:first-child{
+  .headerUl li:first-child {
     display: none;
   }
   .cartBtn {
@@ -518,7 +547,7 @@ footer div p {
   }
 
   .hamTop.active {
-    transform: rotate(-45deg) translate(-7px , 8px);
+    transform: rotate(-45deg) translate(-7px, 8px);
   }
   .hamMid.active {
     opacity: 0;
@@ -527,6 +556,28 @@ footer div p {
     transform: rotate(45deg) translate(-7px, -8px);
   }
 
+  /* Submenu de tienda */
+  .dropdown-menu {
+    background: var(--main-color);
+    padding: 0.1rem 1rem;
+    margin: 0 !important;
+    width: 100% !important;
+    border: none;
+    position: relative;
+  }
+
+  .dropdown-menu li {
+    line-height: 0.1rem;
+  }
+
+  .dropdown-toggle {
+    padding: 0 !important;
+  }
+
+  .dropdown-menu.show {
+    position: relative !important;
+    transform: translate3d(-1rem, 1rem, 0) !important;
+  }
 }
 
 /* ** Medium md ** */
@@ -608,5 +659,4 @@ footer div p {
   .log footer {
     margin-top: calc(1rem + 22vh);
   }
-  
 }

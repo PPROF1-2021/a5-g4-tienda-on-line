@@ -25,20 +25,19 @@
       </a>
       <ul class="navLinks">
         <li><a href="index.html" target="self">Home</a></li>
-
-        <!----tienda categorias-->
         <li class="navbar_tienda">
-          <a class="nav-link dropdown-toggle" id="navbar_desplegable" href="tienda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+          <a class="nav-link dropdown-toggle p-1" id="navbar_desplegable" href="tienda.html" role="hover"
+            data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
           <ul class="dropdown-menu" aria-labelledby="navbar_desplegable">
-              <li><a class="elemento_desplegable" href="tienda.html">Todos los productos</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="elemento_desplegable" href="#!">Cuidado personal</a></li>
-              <li><a class="elemento_desplegable" href="#!">Hogar</a></li>
-              <li><a class="elemento_desplegable" href="#!">Mascotas</a></li>
+            <li><a class="elemento_desplegable" href="tienda.html">Todos los productos</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="elemento_desplegable" href="#!">◼ Cuidado personal</a></li>
+            <li><a class="elemento_desplegable" href="#!">◼ Hogar</a></li>
+            <li><a class="elemento_desplegable" href="#!">◼ Mascotas</a></li>
           </ul>
-      </li>
-      <!----tienda categorias-->
-
+        </li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -62,17 +61,9 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
         </ol>
       </nav>
     </div>
-
-    <div class="flex-fill px-lg-5 my-5 bg-success">
-      <div class="text-center text-white">
-          <h1 class="display-4 fw-bolder">Green Buddies</h1>
-          <p class="lead fw-normal text-white-50 mb-0">Accede a todos los productos disponibles en nuestra tienda amigable con el medio ambiente</p>
-      </div>
-  </div>
 
   </header>
 
@@ -82,13 +73,13 @@
       <div class="text-center mb-5">
         <h4>Contacto con Green Buddies</h4>
       </div>
-    
+
       <div class="row g-3">
         <div class="col-md-4">
           <label for="validationDefault01" class="form-label">Nombre *</label>
           <input type="text" class="form-control" id="validationDefault01" required minlength="2">
         </div>
-  
+
         <div class="col-md-4">
           <label for="validationDefault02" class="form-label">Apellido *</label>
           <input type="text" class="form-control" id="validationDefault02" value="" required minlength="2">
@@ -98,12 +89,12 @@
           <label for="validationDefault01" class="form-label">Correo *</label>
           <input type="email" class="form-control" id="validationDefault01" value="" required>
         </div>
-        
-        <div class="form-group" >
+
+        <div class="form-group">
           <label for="mensajeContacto">Mensaje *</label>
           <textarea class="form-control" id="mensajeContacto" rows="4" required minlength="8"></textarea>
         </div>
-          
+
         <div class="col-12 text-center">
           <button class="btn btn-success submitBtn" type="submit">Enviar</button>
         </div>
