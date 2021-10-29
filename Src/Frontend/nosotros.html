@@ -24,7 +24,20 @@
       </a>
       <ul class="navLinks">
           <li><a href="index.html" target="self">Home</a></li>
-          <li><a href="tienda.html.html">Tienda</a></li>
+          
+          <!----tienda categorias-->
+        <li class="navbar_tienda">
+          <a class="nav-link dropdown-toggle" id="navbar_desplegable" href="tienda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+          <ul class="dropdown-menu" aria-labelledby="navbar_desplegable">
+              <li><a class="elemento_desplegable" href="tienda.html">Todos los productos</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="elemento_desplegable" href="#!">Cuidado personal</a></li>
+              <li><a class="elemento_desplegable" href="#!">Hogar</a></li>
+              <li><a class="elemento_desplegable" href="#!">Mascotas</a></li>
+          </ul>
+      </li>
+      <!----tienda categorias-->
+
           <li><a href="blog.html">Blog</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
@@ -52,6 +65,14 @@
         </ol>
       </nav>
     </div>
+
+    <div class="flex-fill px-lg-5 my-5 bg-success">
+      <div class="text-center text-white">
+          <h1 class="display-4 fw-bolder">Green Buddies</h1>
+          <p class="lead fw-normal text-white-50 mb-0">Accede a todos los productos disponibles en nuestra tienda amigable con el medio ambiente</p>
+      </div>
+  </div>
+
   </header>
   <main class="home main-nosotros">
     <section class="nosotros container">
