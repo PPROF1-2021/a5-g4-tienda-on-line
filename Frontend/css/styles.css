@@ -425,6 +425,21 @@ footer div p {
   border-radius: 0.5rem;
 }
 
+/* ____TIENDA.html_____ */
+
+/* --Productos-- */
+.card-footer {
+  display: flex;
+  flex-direction: column;
+}
+.card-footer div {
+  padding: 0.2rem;
+}
+.card-footer .btn {
+  max-width: 300px;
+  width: 100%;
+}
+
 /* ======================= RESPONSIVIDAD ============================== */
 
 /* **** Extra large xl **** */
@@ -578,6 +593,8 @@ footer div p {
     position: relative !important;
     transform: translate3d(-1rem, 1rem, 0) !important;
   }
+
+  /* ____Tienda.html____ */
 }
 
 /* ** Medium md ** */
