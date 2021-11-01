@@ -349,16 +349,10 @@ footer div p {
   margin-top: 3rem;
 }
 
-/*  ======== contacto.html ========  */
-
-.contacto {
-  margin-top: calc(9rem + 12vh);
-}
-
 /*  ======== nosotros.html ========  */
 
 .main-nosotros {
-  background: var(--main-color);
+  background: var(--bg-color);
   width: 100vw;
 }
 
@@ -403,7 +397,7 @@ footer div p {
 /*  Separador de nosotros.html  */
 
 .separador {
-  background: #70863b;
+  background: #198754;
   display: flex;
   justify-content: space-between;
   border-radius: 0.5rem;
