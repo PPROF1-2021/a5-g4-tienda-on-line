@@ -19,67 +19,53 @@
       
       <body>
         <header>
-          <nav class="navMenu">
-            <a href="../index.html" class="logo">
-              <img src="../img/greenBuddiesLogo.png" alt="Logo de Green Buddies">
-            </a>
-            <ul class="navLinks">
-              <li><a href="../index.html" target="self">Home</a></li>
-              <li class="navbar_tienda">
-                <a class="nav-link dropdown-toggle p-1" id="navbar_desplegable" href="" role="hover"
-                  data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
-                <ul class="dropdown-menu" aria-labelledby="navbar_desplegable">
-                  <li><a class="elemento_desplegable" href="../tienda.html">Todos los productos</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
+          <div class="navegacion">
+            <div class="row p-2">
+              <div class="navTop row">
+                <a href="../index.html" class="logo col col-4">
+                  <img src="../img/greenBuddiesLogo.png" alt="Logo de Green Buddies">
+                </a>
+                <form class="d-flex m-auto col-4">
+                  <input class="form-control me-2" type="search" placeholder="Busca aquí lo que desees" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <ul class="headerUl col col-4 justify-content-end">
+                  <li><a href="../login.html"><i class="fas fa-user"></i></a></li>
+                  <li class="cartBtn"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                  <li class="hamMenu">
+                    <span class="hamTop"></span>
+                    <span class="hamMid"></span>
+                    <span class="hamBot"></span>
                   </li>
-                  <li><a class="elemento_desplegable" href="../categorias/cuidado-personal.html">◼ Cuidado personal</a></li>
-                  <li><a class="elemento_desplegable" href="../categorias/hogar.html">◼ Hogar</a></li>
-                  <li><a class="elemento_desplegable" href="../categorias/mascotas.html">◼ Mascotas</a></li>
                 </ul>
-              </li>
-              <li><a href="../blog.html">Blog</a></li>
-              <li><a href="../nosotros.html">Nosotros</a></li>
-              <li><a href="../contacto.html">Contacto</a></li>
-              <li class="logBtn">
-                <span><a href="../login.html" id="ingresar">Ingresá</a></span>
-                <span><a href="../registro.html" id="ingresar">Registrate</a></span>
-              </li>
-            </ul>
-            <ul class="headerUl">
-              <li><a href="../login.html"><img src="../img/usuario.png" alt="Ícono de usuario"></img></a></li>
-              <li class="cartBtn"><a href=""><img src="../img/carrito.png" alt="Ícono de carrito de compras"></img></a></li>
-              <li class="hamMenu">
-                <span class="hamTop"></span>
-                <span class="hamMid"></span>
-                <span class="hamBot"></span>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="breadcrumb ms-5 mt-4">
-
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                  <li class="breadcrumb-item"><a href="../tienda.html">Tienda</a></li>
-                  <li class="breadcrumb-item"><a href="../categorias/cuidado-personal.html">Cuidado Personal</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Producto</li>
-
-                  
-                </ol>
-              </nav>
-        
+              </div>
             </div>
-    <section class=" bg-success py-5 ">
-      <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-          <h1 class="display-4 fw-bolder">Green Buddies</h1>
-          <p class="lead fw-normal text-white-50 mb-0">Los mejores productos biodegradables y ecológicos para el cuidado personal</p>
-        </div>
-      </div>
-    </section>
-  </header>
+            <hr class="m-1">
+            <nav class="navMenu">
+        
+              <ul class="navLinks">
+                <li><a href="../index.html" target="self">Inicio</a></li>
+                <li class="navbar_tienda">
+                  <a class="nav-link dropdown-toggle p-1" id="navbar_desplegable" href="" role="hover"
+                    data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbar_desplegable">
+                    <li><a class="elemento_desplegable" href="../tienda.html">Todos los productos</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="elemento_desplegable" href="../categorias/cuidado-personal.html">Cuidado personal</a></li>
+                    <li><a class="elemento_desplegable" href="../categorias/hogar.html">Hogar</a></li>
+                    <li><a class="elemento_desplegable" href="../categorias/mascotas.html">Mascotas</a></li>
+                  </ul>
+                </li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../nosotros.html">Nosotros</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+      
+        </header>
 
   <main>
 
@@ -120,6 +106,16 @@
                 <!---Slider-->
                 
                 <div class="col-md-6">
+                  <div class="breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="../tienda.html">Tienda</a></li>
+                        <li class="breadcrumb-item"><a href="../categorias/cuidado-personal.html">Cuidado Personal</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Producto</li>
+                      </ol>
+                    </nav>
+                  </div>
                     <h1 class="display-6 fw-bolder">Toallitas Femeninas de Tela | BeeGreen</h1>
                     <br>
                     <div class="fs-3 mb-4">
