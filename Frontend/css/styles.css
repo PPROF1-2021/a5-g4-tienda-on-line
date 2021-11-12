@@ -352,6 +352,7 @@ footer .container {
   padding: .4rem 0;
 }
 
+
 /*  ======== nosotros.html ========  */
 
 .main-nosotros {
@@ -377,17 +378,6 @@ footer .container {
   flex-direction: column;
 }
 
-.nosotros h1,
-.mision h2,
-.vision h2 {
-  color: #007305;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: calc(2rem + 3vw);
-  justify-content: center;
-}
-
 .nosotros .imagen {
   align-self: center;
   width: 50vw;
@@ -397,45 +387,49 @@ footer .container {
   width: 100%;
 }
 
-/*  Separador de nosotros.html  */
-
-.separador {
-  background: #198754;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 0.5rem;
-}
-
-.separador-mensaje {
-  color: #fff;
-  display: flex;
-}
-
-.separador-mensaje p {
-  font-weight: 600;
-  font-size: calc(1rem + 1.5vw);
-  line-height: 3.8rem;
-  align-self: center;
-}
-
-.separador .carousel img {
-  border-radius: 0.5rem;
-}
-
 /* ____TIENDA.html_____ */
 
 /* --Productos-- */
+.card {
+  border: none;
+}
+
+.card:hover {
+  border: solid rgba(128, 128, 128, 0.452) 1px;
+}
+
 .card-footer {
   display: flex;
   flex-direction: column;
 }
+
 .card-footer div {
   padding: 0.2rem;
 }
+
 .card-footer .btn {
   max-width: 300px;
   width: 100%;
 }
+
+/* Breadcrumb para productos */
+.breadcrumb-item a {
+  color: var(--logo-font-color);
+  text-decoration: none;
+}
+
+
+/* Contacto.html */
+.contacto {
+  max-width: 1366px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+
 
 /* ======================= RESPONSIVIDAD ============================== */
 
@@ -446,7 +440,7 @@ footer .container {
   /* _____________Nosotros.html____________ */
 
   .main-nosotros {
-    padding: 0 2rem;
+    padding: 1rem 0 0 0;
   }
 
   /*-------------- Misión y Visión --------------*/
@@ -459,6 +453,7 @@ footer .container {
   .mision .imagen {
     width: 40vw;
   }
+
   .mision .imagen img {
     width: 100%;
   }
@@ -471,14 +466,16 @@ footer .container {
     top: 17px;
     right: 80px;
   }
+
   .navMenu {
     flex-direction: column;
     align-items: initial;
     position: relative;
     width: 100vw;
-    padding: 8px 15px;
+    padding: 0 15px;
     max-height: none;
   }
+
   .navMenu .logo {
     margin: 0;
     padding: 0;
@@ -489,9 +486,8 @@ footer .container {
     align-items: flex-start;
     align-content: center;
     padding: 0;
-    margin: 1rem 0;
+    margin: 0 0 .5rem 0;
     gap: 0;
-    background: #ecebe9;
     list-style: none;
     display: none;
     opacity: 0;
@@ -506,6 +502,7 @@ footer .container {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -520,34 +517,15 @@ footer .container {
     width: 120px;
   }
 
-  .logBtn {
-    display: flex;
-    padding-top: 1rem;
-    gap: 1rem;
-  }
-
-  .logBtn a {
-    border-radius: 10px;
-    padding: 0.7rem 1rem;
-    background: #007305;
-    color: var(--clear-font-color);
-    font-weight: 600;
-    font-size: 1.2rem;
-    box-shadow: var(--soft-shadow);
-  }
-
-  .logBtn :last-child a {
-    background: var(--second-color);
-    color: var(--font-color);
-  }
-
   .headerUl {
     display: flex;
     list-style: none;
   }
+
   .headerUl li:first-child {
     display: none;
   }
+
   .cartBtn {
     position: absolute;
     top: 15px;
@@ -561,9 +539,11 @@ footer .container {
   .hamTop.active {
     transform: rotate(-45deg) translate(-7px, 8px);
   }
+
   .hamMid.active {
     opacity: 0;
   }
+
   .hamBot.active {
     transform: rotate(45deg) translate(-7px, -8px);
   }
@@ -591,86 +571,120 @@ footer .container {
     transform: translate3d(-1rem, 1rem, 0) !important;
   }
 
-  /* ____Tienda.html____ */
-}
-
-/* ** Medium md ** */
-@media only screen and (max-width: 768px) {
-  /* ______________*/
-  /* ____home.html_____ */
-
-  /* carousel */
-
-  .home .carousel {
-    width: 100vw;
+  .navTop {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
   }
 
-  .home .container-md {
-    padding-left: 0;
+  .dropdown-menu::before {
+    display: none;
   }
 
-  /* ______________ */
-  /* ____Nosotros.html_____ */
-
-  /* separador */
-  .separador {
+  /* Barra de búsqueda */
+  header .d-flex {
     justify-content: center;
   }
 
-  .separador .row,
-  .separador .carousel {
+  header .form-control {
+    min-width: 280px;
+  }
+
+  /* Footer */
+  footer .container {
+    display: flex;
+  }
+
+  footer .container .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer ul {
+    display: none;
+  }
+
+  footer .short-footer .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: .2rem;
+    margin: .2rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  footer .container {
+    flex-wrap: wrap;
+  }
+
+  footer h5,
+  footer form,
+  footer p {
+    margin: 0;
+    padding: 0;
+    --bs-gutter-x: 0;
+  }
+}
+
+@media only screen and (max-width: 644px) {
+
+  /* Menu Hamburguesa */
+  .navTop {
+    grid-template-columns: 1fr;
+    gap: .5rem;
+  }
+
+  header .navTop form {
     width: 100%;
   }
 
-  .separador-mensaje,
-  .separador .carousel {
-    padding: 1rem !important;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
+  /* Footer */
+  footer section ul {
+    display: none;
   }
+
+  /* Contacto */
+  .contacto div.card-body {
+    width: 90vw;
+    max-width: none;
+  }
+
+  .container .contacto,
+  .formulario_contacto {
+    min-width: 90vw;
+  }
+
 }
 
 /* ** x- Small <576px ** */
 
 @media only screen and (max-width: 576px) {
-  footer {
-    width: 100%;
-    height: 100%;
-    text-align: center;
+
+  /* NavBar */
+  header .navTop {
+    margin: 0 .1rem;
+    padding: 0 .1rem;
   }
 
-  .footer {
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    flex-wrap: wrap;
+  header .navTop form {
+    transform: scale(.9);
+    padding-left: 0;
   }
 
-  /* login.html */
-
-  .login .container-sm {
-    width: 97%;
-    margin: auto;
-  }
-  .login form {
-    padding: 0.5rem;
+  /* Footer */
+  footer .btn {
+    width: 100px;
+    font-size: .8rem;
   }
 
-  .login section form div,
-  .login section form input {
-    width: 250px;
+  /* Nosotros */
+  .main-nosotros p {
+    padding: 1rem;
   }
-}
 
-/* Arreglos aislados y -provisorios- */
-
-@media only screen and (min-height: 800px) {
-  /* _______________*/
-  /* _____Login.html______ */
-
-  .log footer {
-    margin-top: calc(1rem + 22vh);
+  /* formularios contacto-inicio de sesión y registro */
+  .forms {
+    padding: 1rem .2rem;
   }
 }
