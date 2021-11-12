@@ -19,55 +19,52 @@
 
 <body>
   <header>
-    <nav class="navMenu">
-      <a href="../index.html" class="logo">
-        <img src="../img/greenBuddiesLogo.png" alt="Logo de Green Buddies">
-      </a>
-      <ul class="navLinks">
-        <li><a href="../index.html" target="self">Home</a></li>
-        <li class="navbar_tienda">
-          <a class="nav-link dropdown-toggle p-1" id="navbar_desplegable" href="" role="hover"
-            data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
-          <ul class="dropdown-menu" aria-labelledby="navbar_desplegable">
-            <li><a class="elemento_desplegable" href="../tienda.html">Todos los productos</a></li>
-            <li>
-              <hr class="dropdown-divider" />
+    <div class="navegacion">
+      <div class="row p-2">
+        <div class="navTop row">
+          <a href="../index.html" class="logo col col-4">
+            <img src="../img/greenBuddiesLogo.png" alt="Logo de Green Buddies">
+          </a>
+          <form class="d-flex m-auto col-4">
+            <input class="form-control me-2" type="search" placeholder="Busca aquí lo que desees" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <ul class="headerUl col col-4 justify-content-end">
+            <li><a href="../login.html"><i class="fas fa-user"></i></a></li>
+            <li class="cartBtn"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="hamMenu">
+              <span class="hamTop"></span>
+              <span class="hamMid"></span>
+              <span class="hamBot"></span>
             </li>
-            <li><a class="elemento_desplegable" href="#">◼ Cuidado personal</a></li>
-            <li><a class="elemento_desplegable" href="../categorias/hogar.html">◼ Hogar</a></li>
-            <li><a class="elemento_desplegable" href="../categorias/mascotas.html">◼ Mascotas</a></li>
           </ul>
-        </li>
-        <li><a href="../blog.html">Blog</a></li>
-        <li><a href="../nosotros.html">Nosotros</a></li>
-        <li><a href="../contacto.html">Contacto</a></li>
-        <li class="logBtn">
-          <span><a href="../login.html" id="ingresar">Ingresá</a></span>
-          <span><a href="../registro.html" id="ingresar">Registrate</a></span>
-        </li>
-      </ul>
-      <ul class="headerUl">
-        <li><a href="../login.html"><img src="../img/usuario.png" alt="Ícono de usuario"></img></a></li>
-        <li class="cartBtn"><a href=""><img src="../img/carrito.png" alt="Ícono de carrito de compras"></img></a></li>
-        <li class="hamMenu">
-          <span class="hamTop"></span>
-          <span class="hamMid"></span>
-          <span class="hamBot"></span>
-        </li>
-      </ul>
-    </nav>
-    
-    <div class="breadcrumb ms-5 mt-4">
-      <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="../tienda.html">Tienda</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Cuidado Personal</li>
-          </ol>
-        </nav>
+        </div>
+      </div>
+      <hr class="m-1">
+      <nav class="navMenu">
+  
+        <ul class="navLinks">
+          <li><a href="../index.html" target="self">Inicio</a></li>
+          <li class="navbar_tienda">
+            <a class="nav-link dropdown-toggle p-1" id="navbar_desplegable" href="" role="hover"
+              data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+            <ul class="dropdown-menu" aria-labelledby="navbar_desplegable">
+              <li><a class="elemento_desplegable" href="../tienda.html">Todos los productos</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="elemento_desplegable" href="../categorias/cuidado-personal.html">Cuidado personal</a></li>
+              <li><a class="elemento_desplegable" href="../categorias/hogar.html">Hogar</a></li>
+              <li><a class="elemento_desplegable" href="../categorias/mascotas.html">Mascotas</a></li>
+            </ul>
+          </li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../nosotros.html">Nosotros</a></li>
+          <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <section class=" bg-success py-5 ">
+    <section class="banner bg-success py-5 ">
       <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
           <h1 class="display-4 fw-bolder">Cuidado Personal</h1>
@@ -84,6 +81,33 @@
     <section class="py-5">
       <div class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center flex-wrap">
+        <!-- PRODUCTO NUEVO-->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Sale badge-->
+              <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Nuevo</div>
+              <!-- Imagen del producto-->
+              <a href="../productos/esponja_konjac.html"><img class="card-img-top" src="../img/productos/esponja_konjac1.png"
+                alt="Esponja Konjac de lavanda" /></a>
+              <!-- Detalles prodcuto-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Nombre producto-->
+                  <h5 class="fw-bolder">Esponja facial | Konjac</h5>
+                  <!-- Precio producto-->
+                  $749
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent m-auto">
+                <div class="text-center d-inline-flex "><a class="btn btn-outline-dark mt-auto"
+                    href="../productos/esponja_konjac.html">Detalles del producto</a></div>
+                <div class="text-center d-inline-flex"><a class="btn btn-outline-dark mt-auto"
+                    href="#">Agregar al carrito </a></div>
+              </div>
+            </div>
+          </div>
+          <!-- PRODUCTO NUEVO-->
           <div class="col mb-5">
             <div class="card h-100">
               <!-- Imagen del producto-->
@@ -268,18 +292,57 @@
 
 
   <footer>
-    <section class="footer">
-      <div>
-        <a href="https://www.instagram.com/greenbuddies4r/" target="blank"><img src="../img/instagram.png"
-            alt="logo de Instagram"></a>
-        <p>Instagram</p>
+    <div class="container pt-3 pb-3">
+      <div class="row">
+        <section class="col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="">Términos y condiciones</a></li>
+            <li><a href="">Política de privacidad</a></li>
+            <li><a href="">Información al usuario financiero</a></li>
+            <li><a href="">Botón de arrepentimiento</a></li>
+            <li><a href="">Garantía y devoluciones</a></li>
+            <li><a href="">Defensa del Consumidor</a></li>
+          </ul>
+        </section>
+        <section class="col">
+          <h5>Atención al cliente</h5>
+          <ul>
+            <li><a href="">0810-464-7613</a></li>
+            <li><a href="mailto:consultas@greenbuddies.com">consultas@greenbuddies.com</a></li>
+          </ul>
+          <h5>Redes sociales</h5>
+          <ul>
+            <li>
+              <span><a href=""><i class="fab fa-twitter-square"></i></a></span>
+              <span><a href=""><i class="fab fa-facebook-square"></i></a></span>
+              <span><a href=""><i class="fab fa-instagram-square"></i></a></span>
+              <span><a href=""><i class="fab fa-whatsapp-square"></i></a></span>
+            </li>
+          </ul>
+        </section>
+        <section class="col">
+          <h5>Ayuda</h5>
+          <ul>
+            <li><a href="">Comprar</a></li>
+            <li><a href="">Vender</a></li>
+            <li><a href="">Unirse a nosotros</a></li>
+          </ul>
+          <h5>Recibí las mejores ofertas</h5>
+          <form class="d-flex pt-2">
+            <input class="form-control me-2" type="search" placeholder="Ingresá tu email" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Suscribirme</button>
+          </form>
+        </section>
       </div>
-      <div>
-        <a href="" target="blank"><img src="../img/facebook.png" alt="logo de Facebook"></a>
-        <p>Facebook</p>
+      <div class="row m-auto pt-4">
+        <p>Copyright © 2021 Green Buddies S.A</p>
+        <p>El uso de este sitio web implica la aceptación de los <a href="">Términos y Condiciones</a> y de las <a href="">Políticas de Privacidad</a> de Green Buddies S.A.
+          Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online para los productos presentados/publicados en este sitio son válidos exclusivamente para la compra vía internet.
+        </p>
       </div>
-    </section>
-    <p>Todos los derechos reservados a Green Buddies®</p>
+    </div>
+    
   </footer>
   <script src="../js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

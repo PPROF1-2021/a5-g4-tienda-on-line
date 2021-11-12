@@ -417,6 +417,9 @@ footer .container {
   color: var(--logo-font-color);
   text-decoration: none;
 }
+.breadcrumb {
+  margin-top: 60px;
+}
 
 
 /* Contacto.html */
