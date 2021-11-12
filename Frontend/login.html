@@ -14,102 +14,99 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="img/greenbuddies.ico" />
   <script src="https://kit.fontawesome.com/779db6cf6f.js" crossorigin="anonymous"></script>
-  <title>Green Buddies | Login</title>
+  <title>Green Buddies | Acceder</title>
 </head>
 
 <body>
   <header>
-    <nav class="navMenu">
-      <a href="index.html" class="logo">
-        <img src="img/greenBuddiesLogo.png" alt="Logo de Green Buddies">
-      </a>
-      <ul class="navLinks">
-        <li><a href="index.html" target="self">Home</a></li>
-        <li class="navbar_tienda">
-          <a class="nav-link dropdown-toggle p-1" id="navbar_desplegable" href="tienda.html" role="hover"
-            data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
-          <ul class="dropdown-menu" aria-labelledby="navbar_desplegable">
-            <li><a class="elemento_desplegable" href="tienda.html">Todos los productos</a></li>
-            <li>
-              <hr class="dropdown-divider" />
+    <div class="row p-2">
+      <div class="navTop row">
+        <a href="index.html" class="logo col col-4">
+          <img src="img/greenBuddiesLogo.png" alt="Logo de Green Buddies">
+        </a>
+        <nav class="navMenu col-4">
+
+          <ul class="navLinks">
+            <li><a href="index.html" target="self">Inicio</a></li>
+            <li class="navbar_tienda">
+              <a class="nav-link dropdown-toggle p-1" id="navbar_desplegable" href="tienda.html" role="hover"
+                data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+              <ul class="dropdown-menu" aria-labelledby="navbar_desplegable">
+                <li><a class="elemento_desplegable" href="tienda.html">Todos los productos</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="elemento_desplegable" href="categorias/cuidado-personal.html">Cuidado personal</a></li>
+                <li><a class="elemento_desplegable" href="categorias/hogar.html">Hogar</a></li>
+                <li><a class="elemento_desplegable" href="categorias/mascotas.html">Mascotas</a></li>
+              </ul>
             </li>
-            <li><a class="elemento_desplegable" href="categorias/cuidado-personal.html">◼ Cuidado personal</a></li>
-            <li><a class="elemento_desplegable" href="categorias/hogar.html">◼ Hogar</a></li>
-            <li><a class="elemento_desplegable" href="categorias/mascotas.html">◼ Mascotas</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
-        </li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li class="logBtn">
-          <span><a href="login.html" id="ingresar">Ingresá</a></span>
-          <span><a href="registro.html" id="ingresar">Registrate</a></span>
-        </li>
-      </ul>
-      <ul class="headerUl">
-        <li><a href="login.html"><img src="img/usuario.png" alt="Ícono de usuario"></img></a></li>
-        <li class="cartBtn"><a href=""><img src="img/carrito.png" alt="Ícono de carrito de compras"></img></a></li>
-        <li class="hamMenu">
-          <span class="hamTop"></span>
-          <span class="hamMid"></span>
-          <span class="hamBot"></span>
-        </li>
-      </ul>
-    </nav>
+        </nav>
+        <ul class="headerUl col col-4 justify-content-end">
+          <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+          <li class="cartBtn"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="hamMenu">
+            <span class="hamTop"></span>
+            <span class="hamMid"></span>
+            <span class="hamBot"></span>
+          </li>
+        </ul>
 
-    <div class="breadcrumb ms-5 mt-4">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Login</li>
-        </ol>
-      </nav>
-    </div>
-
-    <section class=" bg-success py-5 ">
-      <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-          <h1 class="display-4 fw-bolder">Green Buddies</h1>
-          <p class="lead fw-normal text-white-50 mb-0">Ingresa con tu usuario</p>
-        </div>
       </div>
-    </section>
 
+    </div>
   </header>
 
-  <main class="login mt-5">
-    <section>
-      <form action="" method="GET" class="needs-validation" novalidate>
-        <img src="img/iconLogin.png" alt="Login" />
-        <div>
-          <label for="validationCustomUsername" class="form-label">Usuario:</label>
-          <input type="usuario" name="usuario" class="form-control" id="validationCustom01"
-            placeholder="Ingresá tu usuario o correo electrónico" required />
+  <main class="forms">
+    <form class="formulario_registro container-md m-auto p-5 formularios formLogin">
+      <div class="text-center mb-5">
+        <h2>¡Hola!</h2>
+        <h4>Inicia sesión o <a href="registro.html">crea una cuenta</a></h4>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-12">
+          <label for="validationDefault01" class="form-label">Correo *</label>
+          <input type="email" class="form-control" id="validationDefault01" value="" required>
         </div>
-        <div>
-          <label for="validationCustom02" class="form-label">Contraseña:</label>
-          <input type="password" name="password" class="form-control" id="validationCustom02"
-            placeholder="Ingresá tu contraseña" required />
+
+        <div class="col-md-12">
+          <label for="validationDefault01" class="form-label">Contraseña *</label>
+          <input type="password" class="form-control" id="validationDefault01" value="" required minlength="8">
         </div>
-        <a href="#" id="ingresar">Ingresar</a>
-        <a href="#">Olvidaste tu contraseña?</a>
-        <a href="registro.html">Si no tenés cuenta ingresá aqui</a>
-      </form>
-    </section>
+
+        <div class="col-md-12">
+          <button class="btn btn-success submitBtn" type="submit" id="regSubmit">Ingresar</button>
+          <a href="https://www.greenbuddies.netlify.app/auth/facebook" class="btn btn-facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span>Continuar con Facebook</span>
+          </a>
+          <a href="https://www.greenbuddies.netlify.app/auth/google" class="btn btn-google-plus">
+            <i class="fab fa-google" aria-hidden="true"></i>
+            <span>Continuar con Google</span>
+          </a>
+        </div>
+        <div class="text-center mt-5">
+          <p><a href="login.html">¿Olvidaste tu contraseña?</a></p>
+        </div>
+      </div>
+
+    </form>
+
   </main>
   <footer>
-    <section class="footer">
-      <div>
-        <a href="https://www.instagram.com/greenbuddies4r/" target="blank"><img src="img/instagram.png"
-            alt="logo de Instagram"></a>
-        <p>Instagram</p>
-      </div>
-      <div>
-        <a href="" target="blank"><img src="img/facebook.png" alt="logo de Facebook"></a>
-        <p>Facebook</p>
-      </div>
-    </section>
-    <p>Todos los derechos reservados a Green Buddies®</p>
+    <div class="container short-footer">
+      <ul class="row">
+        <li class="col"><a href="">Términos y condiciones</a></li>
+        <li class="col"><a href="">Política de privacidad</a></li>
+        <li class="col"><a href="">Unirse a nosotros</a></li>
+        <li class="col">Copyright © 2021 Green Buddies S.A</li>
+      </ul>
+    </div>
   </footer>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

@@ -4,8 +4,6 @@ Link de acceso al sitio: [greenbuddies.netlify.app](https://greenbuddies.netlify
 ## Especificación de Requerimientos
 [IEEE](https://acceso.ispc.edu.ar/pluginfile.php/29563/mod_forum/attachment/20413/Especificaci%C3%B3n%20de%20requisitos%20de%20software%20Proyecto%20IEEE%20Grupo4%20Aula5.docx?forcedownload=1)
 ## Integrantes 
-Fernandez, Walter Adrian  
-Gudiño Senn, Federica Fanny   
 Monzón, Lucila  
 Murga, María Luciana   
 Yorbandi, Selien Xavier  
@@ -23,20 +21,6 @@ Esta especificación de requisitos está dirigida al usuario del sistema.
 - Personas interesadas en la temática 4R (reducir, reutilizar, reciclar y recuperar) y de participar en eventos ecológicamente responsables.  
 
 ### **Personal involucrado**
-
-|Nombre	 | Fernandez, Walter Adrian|
-| :- | :- | 
-|Rol	| Desarrollador|
-|Categoria Profesional |	Estudiante |
-|Responsabilidad	| |
-|Información de contacto |	wawarooh@gmail.com |
-
-|Nombre|	Gudiño Senn, Federica Fanny|
-| :- | :- | 
-|Rol|	Desarrollador|
-|Categoría| Profesional	Estudiante|
-|Responsabilidad|	|
-|Información de contacto|	fedegs2002@gmail.com |
 
 |Nombre|	Monzón, Lucila|
 | :- | :- | 
@@ -124,5 +108,5 @@ Green Buddies SA no sólo persigue un fin comercial sino también una finalidad 
 [Figma Green Buddies](https://www.figma.com/file/tUEV6OEPa16jo3jaq9mHNG/GreenBuddies?node-id=6%3A2)
 
 ### Modelo relacional de Base de Datos  
-![Green Buddies](https://i.ibb.co/93H27dc/modelo-Relacional.png)
+![Green Buddies](https://i.ibb.co/YX06HTf/BD-grupo4-aula5.jpg)
 
