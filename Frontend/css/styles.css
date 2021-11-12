@@ -286,6 +286,35 @@ footer .container {
   margin-bottom: 14vh;
 }
 
+/* Contenedor de boton "Ver mas" */
+
+.contenedor_ver_mas{
+  align-content: center;
+  justify-content: center;
+  display: grid;
+  height: 10vh;
+  margin: auto;
+    padding: 0;
+  
+  }
+   
+  .boton_ver_mas{
+  border: 3px solid rgb(103, 139, 75);
+  margin-bottom: 20px;
+  padding: .5rem 2rem;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background:rgb(103, 139, 75);
+  color: var(--main-color);
+  }
+
+  .boton_ver_mas:hover{
+    color: rgb(103, 139, 75);
+    background: var(--main-color);
+  }
+
+
 /*  ======== registro.html ========  */
 
 .forms {
@@ -691,3 +720,4 @@ footer .container {
     padding: 1rem .2rem;
   }
 }
+
