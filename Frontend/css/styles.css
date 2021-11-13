@@ -277,7 +277,6 @@ footer .container {
 .sliderFs {
   padding-left: 0;
   padding-right: 0;
-  height: 100vh;
   z-index: 0;
   object-fit: fill;
 }
@@ -314,6 +313,11 @@ footer .container {
     background: var(--main-color);
   }
 
+  /* Campo para suscripción al newsletter */
+  .suscripcionInput {
+    width: 250px;
+    margin-right: .4rem;
+  }
 
 /*  ======== registro.html ========  */
 
@@ -643,6 +647,11 @@ footer .container {
     margin: .2rem;
   }
 
+  /* Slider del Inicio */
+  .home .carousel-indicators {
+    display: none;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -675,6 +684,12 @@ footer .container {
   footer section ul {
     display: none;
   }
+  footer .container {
+    display: inline;
+  }
+  .disclaimer p:last-child{
+    display: none;
+  }
 
   /* Contacto */
   .contacto div.card-body {
@@ -687,12 +702,24 @@ footer .container {
     min-width: 90vw;
   }
 
+  /* Inicio */
+  .home {
+    margin-top: 100px;
+  }
+
 }
 
 /* ** x- Small <576px ** */
 
 @media only screen and (max-width: 576px) {
 
+  /* Suscripcion al newsletter en inicio */
+  .suscripcionInput{
+    margin-bottom: .5rem;
+  }
+  .suscripcionBtn{
+    width: 250px;
+  }
   /* NavBar */
   header .navTop {
     margin: 0 .1rem;
