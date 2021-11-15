@@ -8,15 +8,54 @@ hamMenu.addEventListener("click", () => {
   hamMenuBars.forEach(child => {child.classList.toggle('active')})
 });
 
-/* _______Validación de formularios________ Punto 1 IEFI Programación Web
-(solo feedback de bootstrap por ahora)*/
+/* _______Validación de formularios________ Punto 1 y 2 IEFI Programación Web*/
 
 const formularios = document.querySelector('.formularios');
 const formSubmit = document.querySelector('.submitBtn');
+let fechaNac = document.querySelector('#nacimientoRegis');
 
-formSubmit.addEventListener("click", (e) => {
+/* Punto 2 IEFI Programación Web 1 */
+function calcularEdad() {
+  let hoy = new Date();
+  let anioActual = parseInt(hoy.getFullYear());
+  let mesActual = parseInt(hoy.getMonth() + 1);
+  let diaActual = parseInt(hoy.getDate());
+  
+  let anioNacimiento = parseInt(fechaNac.value.substring(0,4));
+  let mesNacimiento = parseInt(fechaNac.value.substring(5,7));
+  let diaNacimiento = parseInt(fechaNac.value.substring(8,10));
+
+  let edad = anioActual - anioNacimiento;
+  if (mesActual < mesNacimiento){
+    edad--;
+  } else if (mesActual === mesNacimiento && diaActual < diaNacimiento){
+    edad--;
+  }
+  return edad;
+}
+
+
+function alertaEdad() {
+  let fechaNac = document.querySelector('#nacimientoRegis');
+  fechaNac.addEventListener('change', (e) => {
+    if(calcularEdad()<18){
+      
+      Swal.fire({
+        icon: 'error',
+        title: "Lo siento",
+        text: 'Debe tener +18 para poder registrarse'
+      })
+    }
+  });
+}
+
+formSubmit.addEventListener("click", () => {
   formularios.classList.add("was-validated");
 });  
+
+if (window.location.pathname === "/registro.html" || window.location.pathname === "/a5-g4-tienda-on-line/Frontend/registro.html") {
+  alertaEdad();
+}
 
 /* Procesado de datos enviados en los inputs del formulario de registro -- Punto 4 */
   
@@ -56,9 +95,11 @@ formSubmit.addEventListener("click", (e) => {
     //Para probarlo en local hay que cambiar el pathname por "../Frontend/login.html"
         
   }
-  if (window.location.pathname === "/registro.html" || window.location.pathname === "/a5-g4-tienda-on-line/Frontend/registro.html") {modalRegistro()}; 
 
-
+  if (window.location.pathname === "/registro.html" || window.location.pathname === "/a5-g4-tienda-on-line/Frontend/registro.html") {
+    modalRegistro();
+  }; 
+  
 /* Alerta tras envio de formulario de contacto -- Punto 3 IEFI Programacion Web 1 */
 function alertaContacto () {
   const formContacto = document.querySelector("#formContacto");
