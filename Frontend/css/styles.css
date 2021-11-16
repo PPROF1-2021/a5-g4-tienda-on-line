@@ -445,6 +445,10 @@ footer .container {
   width: 100%;
 }
 
+.d-flex :nth-child(2){
+  margin-right: 13px;
+}
+
 /* Breadcrumb para productos */
 .breadcrumb-item a {
   color: var(--logo-font-color);
