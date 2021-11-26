@@ -1,11 +1,6 @@
 ![Green Buddies](https://i.ibb.co/9ykvZTJ/green-Buddies-Logo.png)
 # Tienda online: Green Buddies SA  
 Link de acceso al sitio: [greenbuddies.netlify.app](https://greenbuddies.netlify.app/)  
-
-## Instalación en servidor local  
-
-Este proyecto utiliza php y una base de datos mysql para el sistema de usuarios. Puede probarse en un servidor remoto o en XAMPP, asegurándose de importar en phpmyadmin el [script de la bd](mysqlDB/greenbuddiesbd.sql) y cambiando en conexion.php las variables del servidor del usuario.
-
 ## Especificación de Requerimientos
 [IEEE](https://github.com/PPROF1-2021/a5-g4-tienda-on-line/tree/main/Especificaciones)  
 ## Integrantes 
